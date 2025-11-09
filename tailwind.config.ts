@@ -13,6 +13,10 @@ const config: Config = {
         'beige': '#F5F5DC',
         'green': '#556B2F',
         'brown': '#8B4513',
+        'forest-green': '#4E7C4F',
+        'warm-sand-beige': '#E5D3B3',
+        'terracotta-accent': '#C2704E',
+        'ivory-background': '#FAF8F3',
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],

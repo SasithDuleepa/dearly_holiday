@@ -1,10 +1,11 @@
 import Link from "next/link";
+import Bgimg1 from "./../../public/images/1.png"
 
 export default function Home() {
   return (
     <section
       className="relative flex items-center justify-center h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('https://images.unsplash.com/photo-1594916124233-0255d7f1d24c?q=80&w=1920&auto=format&fit=crop')" }}
+      style={{ backgroundImage: `url(${Bgimg1.src})` }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 text-center text-white">

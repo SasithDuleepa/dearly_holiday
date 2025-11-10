@@ -1,5 +1,5 @@
 import React from 'react';
-import SafariCard from '../components/safari/SafariCard';
+import SafariCard from '../../components/safari/SafariCard';
 
 const SafariPage = () => {
   return <SafariCard isPage={true} />;

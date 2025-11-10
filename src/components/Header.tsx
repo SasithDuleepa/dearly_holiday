@@ -35,7 +35,7 @@ const Header = () => {
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="text-xl font-semibold text-forest-green">
-          <Link href="/">Tissa Nature Stay</Link>
+          <Link href="/">Diarly Home</Link>
         </div>
         <nav className="hidden md:flex items-center space-x-6">
           {navLinks.map((link) => (

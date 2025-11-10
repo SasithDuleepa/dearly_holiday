@@ -3,9 +3,9 @@
 export default function HomeAbout() {
   return (
     <div className=" bg-[#cdb085] shadow-2xl text-center rounded-3xl p-6 sm:rounded-[40px] sm:p-8 md:rounded-[60px] md:p-12 lg:rounded-[80px] lg:p-16 xl:p-20">
-      <h1 className="font-bold text-white mb-6 text-balance leading-tight text-4xl sm:mb-8 md:text-4xl md:mb-10 lg:text-5xl xl:text-6xl font-serif">What make our class special</h1>
+      <h1 className="font-bold text-white mb-6 text-balance leading-tight text-4xl sm:mb-8 md:text-4xl md:mb-10 lg:text-5xl xl:text-6xl font-serif">Why Dearly is Special</h1>
       <div className="relative text-center mb-8 sm:mb-10 lg:mb-12">
-        <p className=  {`font-qwitcher text-white/90 font-light italic f text-4xl md:text-4xl lg:text-4xl xl:text-6xl` }  >Feel at home while cooking Thai</p>
+        <p className=  {`font-qwitcher text-white/90 font-light italic f text-4xl md:text-4xl lg:text-4xl xl:text-6xl` }  >Feel at home with Dearly</p>
         <div className="absolute left-[-5%] right-[-5%] top-1/2 -translate-y-1/2 items-center justify-between hidden sm:flex">
         <span className="h-px w-[28%] bg-white/60"></span>
       <span className="h-px w-[28%] bg-white/60"></span>
@@ -20,7 +20,7 @@ export default function HomeAbout() {
       <path d="M6 17h12"></path>
      </svg>
     </div>
-    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">20+ year experience</span>
+    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">20+ year safari experience</span>
   </div>
 
   <div className="flex items-center gap-3 sm:gap-4">
@@ -30,7 +30,7 @@ export default function HomeAbout() {
       <path d="M6 17h12"></path>
      </svg>
     </div>
-    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">20+ year experience</span>
+    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">Luxury Rooms</span>
   </div>
 
   <div className="flex items-center gap-3 sm:gap-4">
@@ -40,7 +40,7 @@ export default function HomeAbout() {
       <path d="M6 17h12"></path>
      </svg>
     </div>
-    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">20+ year experience</span>
+    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">Delicious Foods</span>
   </div>
 
   <div className="flex items-center gap-3 sm:gap-4">
@@ -50,7 +50,7 @@ export default function HomeAbout() {
       <path d="M6 17h12"></path>
      </svg>
     </div>
-    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">20+ year experience</span>
+    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">Friendly Service</span>
   </div>
 
   <div className="flex items-center gap-3 sm:gap-4">
@@ -60,7 +60,7 @@ export default function HomeAbout() {
       <path d="M6 17h12"></path>
      </svg>
     </div>
-    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">20+ year experience</span>
+    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">Unforgettably Experience</span>
   </div>
 
   <div className="flex items-center gap-3 sm:gap-4">
@@ -70,7 +70,7 @@ export default function HomeAbout() {
       <path d="M6 17h12"></path>
      </svg>
     </div>
-    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">20+ year experience</span>
+    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">Trustworthy Service</span>
   </div>
 
   <div className="flex items-center gap-3 sm:gap-4">
@@ -80,7 +80,7 @@ export default function HomeAbout() {
       <path d="M6 17h12"></path>
      </svg>
     </div>
-    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">20+ year experience</span>
+    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">Tour Guide Experts</span>
   </div>
 
   <div className="flex items-center gap-3 sm:gap-4">
@@ -90,7 +90,7 @@ export default function HomeAbout() {
       <path d="M6 17h12"></path>
      </svg>
     </div>
-    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">20+ year experience</span>
+    <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">Best Cooking Sessions</span>
   </div>
 </div>
 

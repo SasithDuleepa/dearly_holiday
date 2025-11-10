@@ -23,8 +23,17 @@ const HomeGallerySection = () => {
     <section className=" py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-[#A6814C]">Discover Our World</h2>
-          <p className="text-lg text-[#A6814C] mt-2">
+   
+
+          <h1 className=" font-qwitcher  mb-4 xl:mb-6 text-foreground text-7xl xl:text-9xl">
+        D<span className="text-primary font-semibold">iscover </span>
+        O<span className="text-primary font-semibold">ur </span>
+        W<span className="text-primary font-semibold">orld </span>
+      </h1>
+
+
+
+          <p className="text-muted-foreground text-sm md:text-xl font-medium max-w-3xl mx-auto text-pretty leading-relaxed [text-shadow:_0_4px_14px_rgba(0,0,0,0.35)]">
             A glimpse into our guest house, Yala safari adventures, and traditional Sri Lankan cooking experiences.
           </p>
         </div>

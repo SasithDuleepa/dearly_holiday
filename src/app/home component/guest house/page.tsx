@@ -2,6 +2,7 @@
 import Image from "next/image"
 import { useRef } from "react";
 import useEmblaCarousel from "embla-carousel-react";
+import Link from "next/link";
 
 
 
@@ -30,10 +31,24 @@ export default function HomeGuestHouse() {
       
 
       <div className="flex  content-center white shadow-lg px-10 py-5 rounded-3xl">
-        <div className="  max-w-[500px] ">
-          <h1 className="text-3xl font-bold mb-6">Dearly Guest House</h1>
-          <h1>Whether you’re exploring Yala’s wildlife or discovering local culture, our guest house offers the perfect base for your stay. With modern comfort, friendly hosts, and authentic Sri Lankan cuisine, every moment here feels like home.</h1>
-        </div>
+        <div className="  max-w-[500px] px-5 flex flex-col justify-between">
+          <div>
+            <h1 className="text-3xl font-bold mb-6">Stay with Comfort and Warmth</h1>
+          <h1 className="text-[18px] text-justify">
+            Nestled in the peaceful town of Tissamaharama, our guest house offers a cozy retreat surrounded by lush tropical gardens and a calm village atmosphere.
+             Each room is thoughtfully designed for comfort — blending traditional Sri Lankan charm with modern simplicity. Whether you’re planning a Yala Safari or
+              looking for a relaxing stay, you’ll find the perfect balance of tranquility and convenience here.<br/> <br/>
+
+What makes our guest house special is the genuine care and warmth we share with every guest. From the welcoming smiles 
+to freshly prepared home-cooked meals, we ensure you feel right at home throughout your stay. Experience the beauty of 
+rural Sri Lanka, enjoy peaceful evenings, and create unforgettable memories with us.</h1>
+          </div>
+
+<Link href="/guest-house" className=" button">Explore More
+</Link>
+
+
+</div>
               {/* Embla Carousel */}
       <div className="embla max-w-[700px]  overflow-hidden " ref={emblaRef}>
         <div className="embla__container flex ">
@@ -51,13 +66,9 @@ export default function HomeGuestHouse() {
             </div>
           ))}
         </div>
-      </div>
-      </div>
 
-
-
-      {/* Navigation Buttons */}
-      <div className="flex gap-4 mt-4">
+              {/* Navigation Buttons */}
+      <div className="flex gap-4 mt-4 justify-end">
         <button
           className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
           onClick={() => emblaApi?.scrollPrev()}
@@ -71,6 +82,12 @@ export default function HomeGuestHouse() {
           Next
         </button>
       </div>
+      </div>
+      </div>
+
+
+
+
     </main>
 
   )

@@ -31,10 +31,10 @@ const SafariCard: React.FC<SafariCardProps> = ({ isPage }) => {
             birds in their natural habitat. Our guided tours ensure you see
             Yala’s wonders safely and comfortably.
           </p>
-          <Link href="/booking">
-            <button className="bg-custom-olive text-white font-bold py-3 px-6 rounded-full hover:bg-opacity-80 transition-shadow duration-300 transform hover:scale-105 shadow-md hover:shadow-lg">
+          <Link href="/booking" className="button mx-20">
+            
               Book Your Safari
-            </button>
+            
           </Link>
         </div>
       </div>

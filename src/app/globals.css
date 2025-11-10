@@ -56,3 +56,32 @@ body {
 .embla__slide {
   box-sizing: border-box;
 }
+
+.glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 100px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2.1px);
+  -webkit-backdrop-filter: blur(2.1px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+}
+
+.button {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #e4b945;
+  border-radius: 45px;
+  transition: all 0.3s;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+}
+
+.button:hover {
+  background: #e4b945;
+  color: white;
+}

@@ -9,8 +9,8 @@ interface SafariCardProps {
 
 const SafariCard: React.FC<SafariCardProps> = ({ isPage }) => {
   return (
-    <div className={isPage ? "bg-custom-beige min-h-screen flex items-center justify-center p-8" : "bg-custom-beige p-8"}>
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-lg shadow-lg overflow-hidden">
+    <div className={isPage ? "bg-custom-beige min-h-screen flex items-center justify-center py-8" : "bg-custom-beige py-8"}>
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center bg-white rounded-lg shadow-lg overflow-hidden">
         <div className="relative h-64 md:h-full">
           <Image
             src={SafariImage}

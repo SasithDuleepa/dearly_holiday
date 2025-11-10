@@ -17,6 +17,9 @@ const config: Config = {
         'warm-sand-beige': '#E5D3B3',
         'terracotta-accent': '#C2704E',
         'ivory-background': '#FAF8F3',
+        'custom-beige': '#F8F6F2',
+        'custom-olive': '#7A8450',
+        'custom-brown': '#4A3F35',
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],

@@ -39,8 +39,10 @@ export default function Home() {
     <HomeGuestHouse/>
     <HomeSafariSection/>
 
+       <HomeGallerySection/>
+
     <div className="max-w-7xl mx-auto my-10">    <HomeCustomerFeedback/></div>
-    <HomeGallerySection/>
+ 
     </>
   );
 }

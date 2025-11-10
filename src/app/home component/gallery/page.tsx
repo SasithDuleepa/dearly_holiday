@@ -20,7 +20,7 @@ const breakpointColumnsObj = {
 
 const HomeGallerySection = () => {
   return (
-    <section className="bg-[#F8F6F2] py-20">
+    <section className=" py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-[#A6814C]">Discover Our World</h2>

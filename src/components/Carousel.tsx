@@ -1,9 +1,10 @@
 "use client";
 
-import React from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const slides = [
   {
@@ -25,7 +26,30 @@ const slides = [
 ];
 
 const Carousel = () => {
-  const [emblaRef] = useEmblaCarousel({ loop: true }, [Autoplay()]);
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true, direction: 'rtl' }, [Autoplay()]);
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const onSelect = useCallback(() => {
+    if (!emblaApi) return;
+    setActiveIndex(emblaApi.selectedScrollSnap());
+  }, [emblaApi]);
+
+  useEffect(() => {
+    if (!emblaApi) return;
+    onSelect();
+    emblaApi.on("select", onSelect);
+    return () => emblaApi.off("select", onSelect);
+  }, [emblaApi, onSelect]);
+
+  const imageVariants = {
+    hidden: { opacity: 0, x: "100vw" },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.8, ease: "easeInOut" } },
+  };
+
+  const textVariants = {
+    hidden: { opacity: 0, y: "50vh" },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeInOut" } },
+  };
 
   return (
     <div className="embla" ref={emblaRef}>
@@ -33,14 +57,24 @@ const Carousel = () => {
         {slides.map((slide, index) => (
           <div className="embla__slide" key={index}>
             <div className="embla__slide__content">
-              <div className="embla__slide__text">
+              <motion.div
+                className="embla__slide__text"
+                initial="hidden"
+                animate={activeIndex === index ? "visible" : "hidden"}
+                variants={textVariants}
+              >
                 <h2 className="text-3xl font-bold text-brown">{slide.title}</h2>
                 <p className="mt-4 text-lg">{slide.description}</p>
                 <button className="mt-6 bg-brown text-white px-6 py-3 rounded-md">
                   Book Now
                 </button>
-              </div>
-              <div className="embla__slide__image">
+              </motion.div>
+              <motion.div
+                className="embla__slide__image"
+                initial="hidden"
+                animate={activeIndex === index ? "visible" : "hidden"}
+                variants={imageVariants}
+              >
                 <Image
                   src={slide.image}
                   alt={slide.title}
@@ -48,7 +82,7 @@ const Carousel = () => {
                   height={500}
                   className="rounded-lg shadow-lg"
                 />
-              </div>
+              </motion.div>
             </div>
           </div>
         ))}

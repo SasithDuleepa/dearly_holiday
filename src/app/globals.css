@@ -1,84 +1,6 @@
-@import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ececec;
-    --foreground: #000000;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.font-qwitcher {
-  font-family: "Qwitcher Grypen", cursive;
-}
-
-.my-masonry-grid {
-  display: -webkit-box; /* Not needed if autoprefixing */
-  display: -ms-flexbox; /* Not needed if autoprefixing */
-  display: flex;
-  margin-left: -30px; /* gutter size offset */
-  width: auto;
-}
-.my-masonry-grid_column {
-  padding-left: 30px; /* gutter size */
-  background-clip: padding-box;
-}
-
-/* Style your items */
-.my-masonry-grid_column > div {
-  /* change div to reference your elements you put in <Masonry> */
-  margin-bottom: 30px;
-}
-
-@import "tailwindcss";
-@import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #ececec;
-    --foreground: #000000;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.font-qwitcher {
-  font-family: "Qwitcher Grypen", cursive;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 .embla {
   overflow: hidden;
@@ -86,38 +8,60 @@ body {
 
 .embla__container {
   display: flex;
+  direction: ltr; /* Ensure content flows left-to-right */
 }
 
 .embla__slide {
   flex: 0 0 100%;
   min-width: 0;
+  position: relative;
 }
 
 .embla__slide__content {
   display: flex;
+  flex-direction: column-reverse; /* Default to column for mobile */
   align-items: center;
   gap: 2rem;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .embla__slide__content {
+    flex-direction: row; /* Row for larger screens */
+    justify-content: space-between;
+  }
 }
 
 .embla__slide__text {
   flex: 1;
+  max-width: 100%; /* Ensure text wraps */
+  text-align: center; /* Center text on mobile */
+}
+
+@media (min-width: 768px) {
+  .embla__slide__text {
+    text-align: left; /* Align left on larger screens */
+  }
 }
 
 .embla__slide__image {
   flex: 1;
+  max-width: 100%;
 }
 
 .embla__slide__image img {
+  width: 100%;
+  height: auto;
   border-radius: 0.5rem;
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
-  animation: fadeIn 1s ease-in-out;
 }
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
+.embla__slide__text h2 {
+  font-size: 2rem; /* Responsive font size */
+}
+
+@media (min-width: 768px) {
+  .embla__slide__text h2 {
+    font-size: 3rem;
   }
 }

@@ -85,3 +85,18 @@ body {
   background: #e4b945;
   color: white;
 }
+
+.swiper-wrapper {
+  width: 100%;
+  height: max-content !important;
+  padding-bottom: 10px !important;
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important;
+  position: relative;
+}
+.swiper-pagination-bullet {
+  background: #4f46e5;
+}
+.swiper-slide {
+  width: 100px;
+}

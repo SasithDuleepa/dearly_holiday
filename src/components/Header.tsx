@@ -22,7 +22,7 @@ const Header = () => {
     { href: '/about', label: 'About' },
     { href: '/guest-house', label: 'Guest House' },
     { href: '/cooking-class', label: 'Cooking Class' },
-    { href: '/yala-safari', label: 'Yala Safari' },
+    { href: '/safari', label: 'Yala Safari' },
     { href: '/gallery', label: 'Gallery' },
     { href: '/contact', label: 'Contact' },
   ];

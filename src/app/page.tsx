@@ -28,7 +28,7 @@ export default function Home() {
             Join a Cooking Class
           </Link>
           <p className="text-1xl md:text-2xl text-white  py-3 px-3 ">|</p>
-          <Link href="/yala-safari" className="text-1xl md:text-2xl text-white  py-3 px-6 ">
+          <Link href="/safari" className="text-1xl md:text-2xl text-white  py-3 px-6 ">
             Explore Safari
           </Link>
         </div>

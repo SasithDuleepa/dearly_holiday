@@ -2,13 +2,14 @@
 
 import Masonry from 'react-masonry-css';
 import GalleryItem from '../../../components/GalleryItem';
+import Link from 'next/link';
 
 const images = [
   { src: '/images/1.png', alt: 'Guest house exterior' },
   { src: '/images/2.png', alt: 'Safari jeep in Yala National Park' },
   { src: '/images/3.png', alt: 'Traditional Sri Lankan cooking class' },
-  { src: '/images/4.png', alt: 'Nature scene with lush greenery' },
-  { src: '/images/5.png', alt: 'Local culture and traditions' },
+
+
 ];
 
 const breakpointColumnsObj = {
@@ -39,7 +40,7 @@ const HomeGallerySection = () => {
         </div>
         <Masonry
           breakpointCols={breakpointColumnsObj}
-          className="my-masonry-grid"
+          className="my-masonry-grid justify-center"
           columnClassName="my-masonry-grid_column"
         >
           {images.map((image, index) => (
@@ -49,6 +50,10 @@ const HomeGallerySection = () => {
           ))}
         </Masonry>
       </div>
+      <div className='mx-[800px]'>
+        <Link href="/gallery" className='button'>See more</Link>
+      </div>
+      
     </section>
   );
 };

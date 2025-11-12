@@ -1,28 +1,33 @@
-import Image from "next/image";
-import Guest from "../../../public/images/3.png"
+import { Wifi, Coffee, Leaf, Bike, BookOpen, Shirt } from "lucide-react";
 
-const GuestHousePage = () => {
+const facilities = [
+  { icon: <Wifi className="w-8 h-8 text-primary mb-3" />, title: "Free Wi-Fi" },
+  { icon: <Coffee className="w-8 h-8 text-primary mb-3" />, title: "Homemade Breakfast" },
+  { icon: <Leaf className="w-8 h-8 text-primary mb-3" />, title: "Tropical Garden" },
+  { icon: <Shirt className="w-8 h-8 text-primary mb-3" />, title: "Laundry Service" },
+  { icon: <Bike className="w-8 h-8 text-primary mb-3" />, title: "Bicycle Rental" },
+  { icon: <BookOpen className="w-8 h-8 text-primary mb-3" />, title: "Calm Reading Area" },
+];
+
+export default function GuestHousePage() {
   return (
-<section className="py-20 bg-white">
+    <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6">
-        
         {/* Hero */}
         <div className="text-center mb-12">
-        <h1 className="font-qwitcher  mb-4 xl:mb-6 text-foreground text-7xl xl:text-9xl text-center">
-        D<span className="text-primary font-semibold">iarly </span>
-        G<span className="text-primary font-semibold">uest </span>
-        H<span className="text-primary font-semibold">ouse </span>
-   
-      </h1>
-          
+          <h1 className="font-qwitcher mb-4 xl:mb-6 text-foreground text-7xl xl:text-9xl">
+            D<span className="text-primary font-semibold">iarly </span>
+            G<span className="text-primary font-semibold">uest </span>
+            H<span className="text-primary font-semibold">ouse </span>
+          </h1>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Relax, unwind, and feel at home in our cozy guest house surrounded by tropical nature.
           </p>
         </div>
 
-        {/* About */}
-        <div className="grid md:grid-cols-2 gap-10 items-center mb-16">
-          <div>
+        {/* About Section */}
+        <div className="grid md:grid-cols-2 gap-10 items-center mb-20 bg-amber-50 rounded-3xl">
+          <div className="m-5">
             <h2 className="text-2xl font-semibold mb-3">Peaceful Stay in Tissamaharama</h2>
             <p className="text-gray-700 mb-4">
               Nestled in the heart of Tissamaharama, our guest house offers a peaceful retreat 
@@ -34,32 +39,37 @@ const GuestHousePage = () => {
               and experience the warmth of genuine Sri Lankan hospitality.
             </p>
           </div>
-          <div>
-            <Image
-              src={Guest}
+          <div className="overflow-hidden rounded-xl shadow-lg">
+            <img
+              src="/images/3.png"
               alt="Guest House"
-              width={600}
-              height={400}
-              className="rounded-xl shadow-lg"
+              className="rounded-xl object-cover w-full h-full hover:scale-105 transition-transform duration-500"
             />
           </div>
         </div>
 
-        {/* Facilities */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold text-gray-800 mb-8">Facilities</h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
-            {["Free Wi-Fi", "Homemade Breakfast", "Tropical Garden", "Laundry Service", "Bike Rental", "Calm Reading Area"].map((item, i) => (
-              <div key={i} className="bg-amber-50 py-6 px-4 rounded-lg shadow-sm hover:shadow-md transition">
-                <p className="font-medium text-gray-800">{item}</p>
-              </div>
-            ))}
-          </div>
+        {/* 🌿 Facilities Section */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold text-gray-800 mb-6">Our Facilities</h2>
+          <p className="text-gray-600 max-w-2xl mx-auto">
+            Designed to make your stay relaxing and memorable — enjoy comfort, convenience, and a touch of nature.
+          </p>
         </div>
 
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 mt-10">
+          {facilities.map((item, index) => (
+            <div
+              key={index}
+              className="flex flex-col items-center justify-center bg-amber-50 py-10 px-6 rounded-2xl shadow-sm hover:shadow-lg hover:bg-amber-100 transition-all duration-300 group"
+            >
+              <div className="transform group-hover:scale-110 transition-transform duration-300">
+                {item.icon}
+              </div>
+              <p className="mt-3 text-lg font-medium text-gray-800">{item.title}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
-};
-
-export default GuestHousePage;
+}

@@ -1,5 +1,6 @@
 import Image from "next/image"
-import image2 from "./../../../../public/images/4.png"
+import image1 from "./../../../../public/images/cooking home/1.png";
+import image2 from "./../../../../public/images/cooking home/2.png";
 import Link from "next/link"
 export default function HomeCooking() {
   return (
@@ -31,7 +32,7 @@ More than just a class, it’s a joyful experience of cooking, tasting, and shar
           <Image className=" rounded-2xl" src={image2} 
             // width={100} height={100}
             alt="profile picture"/>
-            <Image className="rounded-2xl ml-[30%] mt-[-10%]" src={image2} 
+            <Image className="rounded-2xl ml-[30%] mt-[-10%]" src={image1} 
             // width={100} height={100}
             alt="profile picture"/>
         </div>

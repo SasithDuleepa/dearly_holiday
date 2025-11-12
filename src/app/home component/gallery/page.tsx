@@ -50,8 +50,8 @@ const HomeGallerySection = () => {
           ))}
         </Masonry>
       </div>
-      <div className='mx-[800px]'>
-        <Link href="/gallery" className='button'>See more</Link>
+      <div className='flex justify-center'>
+        <Link href="/gallery" className='button px-15'>See more</Link>
       </div>
       
     </section>

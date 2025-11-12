@@ -72,7 +72,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #e4b945;
+  border: 3px solid oklch(55.4% 0.135 66.442);
   border-radius: 45px;
   transition: all 0.3s;
   cursor: pointer;
@@ -82,7 +82,7 @@ body {
 }
 
 .button:hover {
-  background: #e4b945;
+  background: oklch(55.4% 0.135 66.442);
   color: white;
 }
 

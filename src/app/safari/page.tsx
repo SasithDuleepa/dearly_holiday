@@ -10,10 +10,18 @@ import Image from "next/image";
 import { FaUserTie, FaCarSide, FaSmile, FaClock } from "react-icons/fa";
 
 import SafariHero from "../../../public/images/safari_banner.png";
-import Safari1 from "../../../public/images/safari.png";
-import Safari2 from "../../../public/images/safari2.jpg";
-import Safari3 from "../../../public/images/safari2.jpg";
-import Safari4 from "../../../public/images/safari2.jpg";
+import Safari1 from "../../../public/images/safari slider/1.png";
+import Safari2 from "../../../public/images/safari slider/2.png";
+import Safari3 from "../../../public/images/safari slider/3.png";
+import Safari4 from "../../../public/images/safari slider/4.png";
+import Safari5 from "../../../public/images/safari slider/5.png";
+import Safari6 from "../../../public/images/safari slider/6.png";
+import Safari7 from "../../../public/images/safari slider/7.png";
+import Safari8 from "../../../public/images/safari slider/8.png";
+import Safari9 from "../../../public/images/safari slider/9.png";
+import Safari10 from "../../../public/images/safari slider/10.png";
+
+
 
 const SafariPage = () => {
   useEffect(() => {

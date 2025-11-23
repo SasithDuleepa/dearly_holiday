@@ -4,7 +4,7 @@ import img1 from "./../../../../public/images/4.png";
 export default function HomeCustomerFeedback() {
   const testimonials = [
     {
-      name: "Bonnie Green",
+      name: "- Bonnie Green -",
       role: "Guest from Germany",
       feedback:
         "Such a peaceful place! The room was cozy, the food was delicious, and the hospitality was beyond expectations. We felt like part of the family!",
@@ -12,7 +12,7 @@ export default function HomeCustomerFeedback() {
       image: img1,
     },
     {
-      name: "Roberta Casas",
+      name: "- Roberta Casas -",
       role: "Traveler from France",
       feedback:
         "The hosts were incredibly kind and helpful. The location is perfect for Yala Safari, and we enjoyed the beautiful garden view every morning.",
@@ -20,7 +20,7 @@ export default function HomeCustomerFeedback() {
       image: img1,
     },
     {
-      name: "Jese Leos",
+      name: "- Jese Leos -",
       role: "Guest from UK",
       feedback:
         "The Sri Lankan breakfast and the cozy garden atmosphere made our stay unforgettable. Highly recommended for anyone visiting Tissamaharama!",
@@ -28,7 +28,7 @@ export default function HomeCustomerFeedback() {
       image: img1,
     },
     {
-      name: "Joseph McFall",
+      name: "- Joseph McFall -",
       role: "Guest from Australia",
       feedback:
         "Loved everything! From the clean rooms to the lovely smiles of the owners, this guest house truly captures the heart of Sri Lanka.",
@@ -38,18 +38,26 @@ export default function HomeCustomerFeedback() {
   ];
 
   return (
-    <section className="py-20 bg-[#fffaf3] w-full">
+    <section className="py-5  w-full">
       <div className="max-w-7xl mx-auto px-6 text-center">
-        <h2 className="font-qwitcher text-6xl md:text-8xl text-[#6b3f1d] mb-10">
-          Happy Guests <span className="text-[#c19a6b] font-semibold">Around the World</span>
-        </h2>
-        <p className="text-gray-600 max-w-2xl mx-auto mb-16 text-lg">
+         <h1
+        className="font-qwitcher mb-8 text-foreground text-5xl md:text-7xl xl:text-9xl leading-tight"
+      >
+        H<span className="text-primary font-semibold">appy </span>
+        G<span className="text-primary font-semibold">uest </span>
+        A<span className="text-primary font-semibold">round </span>
+        T<span className="text-primary font-semibold">he </span>
+        W<span className="text-primary font-semibold">orld </span>
+       </h1>
+        <p className="text-muted-foreground text-base md:text-lg lg:text-xl font-medium max-w-3xl mx-auto leading-relaxed [text-shadow:_0_4px_14px_rgba(0,0,0,0.35)]">
           Hear from travelers who have stayed at our guest house, joined our cooking classes, and
           explored the beauty of Yala with us.
         </p>
 
+        
+
         {/* Testimonials Grid */}
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mt-10">
           {testimonials.map((t, i) => (
             <div
               key={i}

@@ -66,7 +66,7 @@ export default function HomeGuestHouse() {
 
           <Link
             href="/guest-house"
-            className="mt-8 inline-block bg-[#6b3f1d] text-white px-8 py-3 rounded-full hover:bg-[#845a2a] transition w-fit"
+            className="mt-8 inline-block text-lg bg-[#6b3f1d] text-white px-8 py-3 rounded-full hover:bg-[#845a2a] transition w-fit"
           >
             Explore More
           </Link>

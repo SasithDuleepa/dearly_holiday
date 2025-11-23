@@ -1,19 +1,10 @@
-import type { NextConfig } from "next";
-
-const nextConfig: NextConfig = {
+// next.config.js
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  output: 'export', // 👈 Important: makes a static export
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'https://flowbite.s3.amazonaws.com', // Replace with your image host domain
-        port: '',
-        pathname: '/blocks/marketing-ui/avatars/**', // Optional: restrict to a specific path
-      },
-    ],
+    unoptimized: true, // 👈 Needed because Next/Image uses optimization by default
   },
 };
-
-export default nextConfig;
-
 
 module.exports = nextConfig;

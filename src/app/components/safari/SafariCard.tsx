@@ -26,14 +26,14 @@ const SafariCard: React.FC<SafariCardProps> = ({ isPage }) => {
           <h2 className="text-xl font-semibold text-custom-olive mb-4">
             Discover the wild side of Sri Lanka with guided jeep tours.
           </h2>
-          <p className="text-gray-700 mb-8">
+          <p className="text-gray-700 mb-8 text-[20px] text-justify">
             Experience the thrill of spotting elephants, leopards, and exotic
             birds in their natural habitat. Our guided tours ensure you see
             Yala’s wonders safely and comfortably.
           </p>
-          <Link href="/booking" className="button mx-20">
+          <Link href="/safari" className="mt-8 inline-block bg-[#6b3f1d] text-white px-8 py-3 rounded-full hover:bg-[#845a2a] transition w-fit">
             
-              Book Your Safari
+              See More ...
             
           </Link>
         </div>

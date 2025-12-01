@@ -31,11 +31,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${poppins.variable} font-sans antialiased bg-ivory-background text-forest-green`}
-      >
+  className={`${montserrat.variable} ${qwitcher.variable} font-sans antialiased bg-ivory-background text-forest-green`}
+>
+
         <div className="flex flex-col min-h-screen">
           <Header />
-          <main className="flex-grow pt-20">{children}</main>
+          <main className="flex-grow ">{children}</main>
           <Footer />
         </div>
       </body>

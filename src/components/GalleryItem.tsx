@@ -43,6 +43,7 @@ const GalleryItem: React.FC<GalleryItemProps> = ({ src, alt }) => {
           onClick={closeLightbox}
         >
           <div className="relative max-w-4xl max-h-full">
+          
             <Image src={src} alt={alt} width={1200} height={800} className="rounded-lg" />
             <button
               onClick={closeLightbox}

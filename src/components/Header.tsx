@@ -1,8 +1,9 @@
 "use client";
 
-import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { useState, useEffect } from 'react';
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,26 +14,36 @@ const Header = () => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
     };
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   const navLinks = [
-    { href: '/', label: 'Home' },
-    { href: '/about', label: 'About' },
-    { href: '/guest-house', label: 'Guest House' },
-    { href: '/cooking-class', label: 'Cooking Class' },
-    { href: '/yala-safari', label: 'Yala Safari' },
-    { href: '/gallery', label: 'Gallery' },
-    { href: '/contact', label: 'Contact' },
+    { href: "/", label: "Home" },
+    { href: "/about", label: "About" },
+    { href: "/guest-house", label: "Guest House" },
+    { href: "/cooking-class", label: "Cooking Class" },
+    { href: "/safari", label: "Yala Safari" },
+    { href: "/gallery", label: "Gallery" },
+    { href: "/contact", label: "Contact" },
   ];
 
   return (
     <header
-      className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-ivory-background shadow-md' : 'bg-transparent'
+      className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
+        isScrolled
+          ? "backdrop-blur-md bg-white/70 shadow-md"
+          : "glass"
       }`}
     >
+      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+        {/* Logo */}
+        <Link href="/" className="text-2xl font-bold text-yellow-700 tracking-wide">
+          Diarly <span className="text-amber-600">Home</span>
+        </Link>
+
+        {/* Desktop Menu */}
+        <nav className="hidden md:flex space-x-8 items-center">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="text-xl font-semibold text-forest-green">
           <Link href="/">Diarly Home</Link>
@@ -42,56 +53,70 @@ const Header = () => {
             <Link
               key={link.href}
               href={link.href}
-              className={`pb-1 border-b-2 ${
+              className={`relative text-[17px] font-medium transition-all duration-300 ${
                 pathname === link.href
-                  ? 'border-terracotta-accent text-forest-green'
-                  : 'border-transparent text-forest-green hover:border-terracotta-accent'
-              } transition-colors duration-300`}
+                  ? "text-yellow-700"
+                  : "text-gray-800 hover:text-yellow-700"
+              }`}
+            >
+              {link.label}
+              <span
+                className={`absolute bottom-0 left-0 w-full h-[2px] bg-yellow-700 transition-transform duration-300 origin-right ${
+                  pathname === link.href
+                    ? "scale-x-100"
+                    : "scale-x-0 group-hover:scale-x-100"
+                }`}
+              ></span>
+            </Link>
+          ))}
+
+          <Link
+            href="/booking"
+            className="bg-yellow-700 text-white font-semibold py-2 px-5 rounded-full hover:bg-yellow-800 transition duration-300 shadow-md"
+          >
+            Book Now
+          </Link>
+        </nav>
+
+        {/* Mobile Menu Button */}
+        <button
+          className="md:hidden text-yellow-700 focus:outline-none"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+        >
+          {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
+        </button>
+      </div>
+
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden bg-white/95 backdrop-blur-md transition-all duration-500 overflow-hidden ${
+          isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <nav className="flex flex-col items-center space-y-5 py-6">
+          {navLinks.map((link) => (
+            <Link
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsMenuOpen(false)}
+              className={`text-lg font-medium transition-all duration-300 ${
+                pathname === link.href
+                  ? "text-yellow-700"
+                  : "text-gray-700 hover:text-yellow-700"
+              }`}
             >
               {link.label}
             </Link>
           ))}
+          <Link
+            href="/booking"
+            onClick={() => setIsMenuOpen(false)}
+            className="bg-yellow-700 text-white font-semibold py-2 px-6 rounded-full hover:bg-yellow-800 transition duration-300 shadow-md"
+          >
+            Book Now
+          </Link>
         </nav>
-        <Link href="/booking" className="hidden md:block bg-terracotta-accent text-white font-bold py-2 px-4 rounded-full hover:bg-opacity-80 transition-colors duration-300">
-          Book Now
-        </Link>
-        <div className="md:hidden">
-          <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
-            {isMenuOpen ? (
-              <svg className="h-6 w-6 text-forest-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="h-6 w-6 text-forest-green" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
-              </svg>
-            )}
-          </button>
-        </div>
       </div>
-      {isMenuOpen && (
-        <div className="md:hidden bg-ivory-background">
-          <nav className="flex flex-col items-center space-y-4 py-4">
-            {navLinks.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={`pb-1 border-b-2 ${
-                  pathname === link.href
-                    ? 'border-terracotta-accent text-forest-green'
-                    : 'border-transparent text-forest-green hover:border-terracotta-accent'
-                } transition-colors duration-300`}
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {link.label}
-              </Link>
-            ))}
-            <Link href="/booking" className="bg-terracotta-accent text-white font-bold py-2 px-4 rounded-full hover:bg-opacity-80 transition-colors duration-300" onClick={() => setIsMenuOpen(false)}>
-              Book Now
-            </Link>
-          </nav>
-        </div>
-      )}
     </header>
   );
 };

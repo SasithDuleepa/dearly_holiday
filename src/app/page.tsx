@@ -1,35 +1,25 @@
 "use client";
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
 
 
 
-import Hero1 from "../../public/sample images/home hero/1.png"
-
-import Bgimg1 from "./../../public/images/3.png"
-import HomeAbout from "./home component/about/page";
-import HomeCooking from "./home component/cooking/page";
-import HomeGuestHouse from "./home component/guest house/page";
-import HomeSafariSection from "./home component/safari/page";
-import HomeCustomerFeedback from "./home component/customer feedback/page";
-import HomeGallerySection from "./home component/gallery/page";
+import HomeAbout from "@/components/home/about/page";
+import HomeCooking from "@/components/home/cooking/page";
+import HomeGuestHouse from "@/components/home/guest house/page";
+import HomeSafariSection from "@/components/home/safari/page";
+import HomeCustomerFeedback from "@/components/home/customer feedback/page";
+import HomeGallerySection from "@/components/home/gallery/page";
 
 
 export default function Home() {
-
-   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
   return (
     <>
       {/* 🌅 Hero Section */}
       <section
-      // className="home-header-main"
         className="relative flex flex-col items-center justify-center h-screen bg-cover bg-center"
-        // style={{ backgroundImage: `url(${Hero1.src})` }}
-
       >
 
 
@@ -213,7 +203,7 @@ export default function Home() {
       </motion.section>
     <section
       className="relative flex items-center justify-center h-screen bg-cover bg-center"
-      style={{ backgroundImage: `url(${Bgimg1.src})` }}
+      style={{ backgroundImage: "url('/images/3.png')" }}
     >
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 text-center text-white flex flex-col content-center items-center">
@@ -235,18 +225,6 @@ export default function Home() {
         </div>
       </div>
     </section>
-    <div className="max-w-7xl mx-auto my-10"><HomeAbout/></div>
-    <HomeGuestHouse/>
-    <div className="max-w-7xl mx-auto "><HomeCooking/></div>
-    
-    
-    
-    <HomeSafariSection/>
-    
-
-       <HomeGallerySection/>
-
-    <div className="max-w-7xl mx-auto my-10">    <HomeCustomerFeedback/></div>
  
     </>
   );

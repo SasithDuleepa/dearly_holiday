@@ -7,15 +7,15 @@ import Image from "next/image";
 
 
 
-import Hero1 from "../../public/sample images/home hero/1.png"
+import Hero1 from "../../public/sample-images/home-hero/1.png"
 
 import Bgimg1 from "./../../public/images/3.png"
-import HomeAbout from "./home component/about/page";
-import HomeCooking from "./home component/cooking/page";
-import HomeGuestHouse from "./home component/guest house/page";
-import HomeSafariSection from "./home component/safari/page";
-import HomeCustomerFeedback from "./home component/customer feedback/page";
-import HomeGallerySection from "./home component/gallery/page";
+import HomeAbout from "@/components/home/about/page";
+import HomeCooking from "@/components/home/cooking/page";
+import HomeGuestHouse from "@/components/home/guest house/page";
+import HomeSafariSection from "@/components/home/safari/page";
+import HomeCustomerFeedback from "@/components/home/customer feedback/page";
+import HomeGallery from "@/components/HomeGallery";
 
 
 export default function Home() {
@@ -192,7 +192,7 @@ export default function Home() {
         viewport={{ once: true }}
       >
         <div className="max-w-7xl mx-auto px-6">
-          <HomeGallerySection />
+          <HomeGallery />
         </div>
       </motion.section>
 
@@ -244,7 +244,7 @@ export default function Home() {
     <HomeSafariSection/>
     
 
-       <HomeGallerySection/>
+       <HomeGallery/>
 
     <div className="max-w-7xl mx-auto my-10">    <HomeCustomerFeedback/></div>
  

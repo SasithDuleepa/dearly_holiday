@@ -4,8 +4,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
-import image1 from "../../../../public/sample images/home cooking/4.png";
-import image2 from "../../../../public/sample images/home cooking/5.png";
+import image1 from "../../../../public/sample-images/home-cooking/4.png";
+import image2 from "../../../../public/sample-images/home-cooking/5.png";
 
 export default function HomeCooking() {
 //   return (

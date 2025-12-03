@@ -159,6 +159,6 @@ const SafariPage = () => {
   );
 
 
-
+};
 
 export default SafariPage;

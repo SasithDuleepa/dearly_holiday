@@ -201,30 +201,7 @@ export default function Home() {
           <HomeCustomerFeedback />
         </div>
       </motion.section>
-    <section
-      className="relative flex items-center justify-center h-screen bg-cover bg-center"
-      style={{ backgroundImage: "url('/images/3.png')" }}
-    >
-      <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="relative z-10 text-center text-white flex flex-col content-center items-center">
-        <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-4 mt-[30%]">
-          Experience the warmth of Sri Lankan hospitality in <br/> Tissamaharama 
-        </h1>
-        <div className="flex justify-center space-x-4 glass px-10 py-1 mt-[50px] w-fit">
-          <Link href="/guest-house" className="text-1xl md:text-2xl text-white  py-3 px-6 ">
-            Book Your Stay
-          </Link>
-          <p className="text-1xl md:text-2xl text-white  py-3 px-3 ">|</p>
-          <Link href="/cooking-class" className="text-1xl md:text-2xl text-white  py-3 px-6 ">
-            Join a Cooking Class
-          </Link>
-          <p className="text-1xl md:text-2xl text-white  py-3 px-3 ">|</p>
-          <Link href="/yala-safari" className="text-1xl md:text-2xl text-white  py-3 px-6 ">
-            Explore Safari
-          </Link>
-        </div>
-      </div>
-    </section>
+
  
     </>
   );

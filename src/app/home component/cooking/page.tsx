@@ -8,20 +8,20 @@ import image1 from "../../../../public/sample images/home cooking/4.png";
 import image2 from "../../../../public/sample images/home cooking/5.png";
 
 export default function HomeCooking() {
-  return (
-    <section className="text-center max-w-7xl my-5 px-6 md:px-16">
-      {/* Heading */}
-      <motion.h1
-        className="font-qwitcher mb-8 text-background text-5xl md:text-7xl xl:text-9xl leading-tight"
-        initial={{ opacity: 0, y: -50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
-        viewport={{ once: true }}
-      >
-import Image from "next/image"
-import image2 from "./../../../../public/images/4.png"
-import Link from "next/link"
-export default function HomeCooking() {
+//   return (
+//     <section className="text-center max-w-7xl my-5 px-6 md:px-16">
+//       {/* Heading */}
+//       <motion.h1
+//         className="font-qwitcher mb-8 text-background text-5xl md:text-7xl xl:text-9xl leading-tight"
+//         initial={{ opacity: 0, y: -50 }}
+//         whileInView={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 1 }}
+//         viewport={{ once: true }}
+//       >
+// import Image from "next/image"
+// import image2 from "./../../../../public/images/4.png"
+// import Link from "next/link"
+// export default function HomeCooking() {
   return (
     <div className="text-center my-20">
       <h1 className="font-qwitcher  mb-4 xl:mb-6 text-foreground text-7xl xl:text-9xl">
@@ -31,7 +31,7 @@ export default function HomeCooking() {
         S<span className="text-primary font-semibold">ri </span>
         L<span className="text-primary font-semibold">ankan </span>
         M<span className="text-primary font-semibold">eals</span>
-      </motion.h1>
+
 
       {/* Content Wrapper */}
       <div className="flex flex-col-reverse md:flex-row items-start justify-center gap-12 my-10 ">
@@ -114,9 +114,9 @@ export default function HomeCooking() {
             >
               Explore More
             </Link>
-    </section>
-  );
-}
+    
+ 
+
       </h1>
 
       
@@ -147,6 +147,6 @@ More than just a class, it’s a joyful experience of cooking, tasting, and shar
       
     </div>
   )
-}
 
+}
 

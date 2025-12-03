@@ -3,7 +3,7 @@ import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
-import Bgimg1 from "./../../public/images/3.png";
+
 
 
 

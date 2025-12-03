@@ -36,14 +36,14 @@ const Header = () => {
           : "glass"
       }`}
     >
-      <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4">
+      {/* <div className="max-w-7xl mx-auto flex justify-between items-center px-6 py-4"> */}
         {/* Logo */}
         <Link href="/" className="text-2xl font-bold text-yellow-700 tracking-wide">
           Diarly <span className="text-amber-600">Home</span>
         </Link>
 
         {/* Desktop Menu */}
-        <nav className="hidden md:flex space-x-8 items-center">
+        {/* <nav className="hidden md:flex space-x-8 items-center"> */}
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         <div className="text-xl font-semibold text-forest-green">
           <Link href="/">Diarly Home</Link>
@@ -85,6 +85,10 @@ const Header = () => {
         >
           {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
         </button>
+      
+      
+      
+      
       </div>
 
       {/* Mobile Menu */}

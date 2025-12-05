@@ -25,6 +25,14 @@ export default function HomeCooking() {
   return (
     <div className="text-center my-20">
       <h1 className="font-qwitcher  mb-4 xl:mb-6 text-foreground text-7xl xl:text-9xl">
+import image1 from "../../../../public/sample images/home cooking/4.png";
+import image2 from "../../../../public/sample images/home cooking/5.png";
+
+export default function HomeCooking() {
+
+  return (
+    <div className="text-center my-20 py-10">
+      <h1 className="font-qwitcher mb-4  xl:mb-6 text-background text-7xl xl:text-9xl mt-[-5%]">
         L<span className="text-primary font-semibold">earn to </span>
         C<span className="text-primary font-semibold">ook </span>
         T<span className="text-primary font-semibold">raditional </span>
@@ -35,6 +43,9 @@ export default function HomeCooking() {
 
       {/* Content Wrapper */}
       <div className="flex flex-col-reverse md:flex-row items-start justify-center gap-12 my-10 ">
+      </h1>
+      {/* Content Wrapper */}
+      <div className="flex flex-col-reverse md:flex-row items-start justify-center gap-12 my-10 mt-10">
         {/* Text Section */}
         <motion.div
           className="w-full md:w-1/2 text-left md:text-justify"
@@ -65,6 +76,13 @@ export default function HomeCooking() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
+
+            <Link
+              href="/cooking-class"
+              className="inline-block px-8 py-3 bg-[#6b3f1d] text-white text-lg rounded-full shadow-lg hover:bg-primary/90 hover:scale-105 transition-all duration-300"
+            >
+              Explore More
+            </Link>  
             
           </motion.div>
         </motion.div>
@@ -72,6 +90,7 @@ export default function HomeCooking() {
         {/* Image Section */}
         <motion.div
           className="w-full md:w-1/2 flex flex-col items-center relative mt-[5%]"
+          className="w-full md:w-1/2 flex flex-col items-center relative mt-[-0%] "
           initial={{ opacity: 0, x: 80 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1 }}
@@ -142,6 +161,9 @@ More than just a class, it’s a joyful experience of cooking, tasting, and shar
             alt="profile picture"/>
         </div>
       </div>
+               
+
+
 
 
       

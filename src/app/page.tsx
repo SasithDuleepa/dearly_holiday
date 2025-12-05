@@ -1,6 +1,5 @@
 "use client";
-import { useRef } from "react";
-import { motion, useInView } from "framer-motion";
+import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -16,20 +15,15 @@ import HomeGuestHouse from "@/components/home/guest house/page";
 import HomeSafariSection from "@/components/home/safari/page";
 import HomeCustomerFeedback from "@/components/home/customer feedback/page";
 import HomeGallery from "@/components/HomeGallery";
+import HomeGallerySection from "@/components/home/gallery/page";
 
 
 export default function Home() {
-
-   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
   return (
     <>
       {/* 🌅 Hero Section */}
       <section
-      // className="home-header-main"
         className="relative flex flex-col items-center justify-center h-screen bg-cover bg-center"
-        // style={{ backgroundImage: `url(${Hero1.src})` }}
-
       >
 
 
@@ -246,7 +240,6 @@ export default function Home() {
 
        <HomeGallery/>
 
-    <div className="max-w-7xl mx-auto my-10">    <HomeCustomerFeedback/></div>
  
     </>
   );

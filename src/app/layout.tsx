@@ -30,7 +30,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-  className={`${montserrat.variable} ${qwitcher.variable} font-sans antialiased bg-ivory-background text-forest-green`}
+  className={`${montserrat.variable} ${qwitcher.variable} font-sans antialiased  text-forest-green`}
 >
 
         <div className="flex flex-col min-h-screen">

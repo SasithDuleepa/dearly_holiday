@@ -1,77 +1,88 @@
-import Image from 'next/image';
-import img1 from "./../../../../public/images/4.png"
+"use client";
+
+import Image from "next/image";
+import img1 from "./../../../../public/images/4.png";
 
 export default function HomeCustomerFeedback() {
+  const testimonials = [
+    {
+      name: "Bonnie Green",
+      role: "Developer at OpenAI",
+      title: "Very easy to integrate",
+      message: "If you care for your time, I hands down would go with this.",
+    },
+    {
+      name: "Roberta Casas",
+      role: "Lead Designer at Dropbox",
+      title: "Solid foundation for any project",
+      message:
+        "Designing with components that blend perfectly with Tailwind CSS saves a lot of time.",
+    },
+    {
+      name: "Jese Leos",
+      role: "Software Engineer at Facebook",
+      title: "Mind-blowing workflow",
+      message:
+        "Beautifully designed components that add real value to every project.",
+    },
+    {
+      name: "Joseph McFall",
+      role: "CTO at Google",
+      title: "Efficient collaborating",
+      message:
+        "Many ready-to-use examples that help create fast prototypes with your team.",
+    },
+  ];
+
   return (
-    <div>
-     <h1 className="font-qwitcher mb-4 xl:mb-6 text-foreground text-7xl xl:text-9xl">
+    <section className="">
+      {/* Heading */}
+      <h1 className="font-qwitcher text-center mb-12 text-6xl md:text-8xl text-foreground">
         H<span className="text-primary font-semibold">appy Guests Around the World</span>
       </h1>
-      
 
+      {/* Grid */}
+      <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-7xl mx-auto px-4">
+        {testimonials.map((t, index) => (
+          <div
+            key={index}
+            className="
+              bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50
+              dark:from-gray-800 dark:via-gray-900 dark:to-gray-950
+              border border-orange-200/50 dark:border-gray-700
+              rounded-3xl p-7 
+              shadow-md hover:shadow-xl
+              hover:-translate-y-1 
+              transition-all duration-300
+            "
+          >
+            {/* Title */}
+            <h3 className="text-lg font-bold text-orange-700 dark:text-amber-300">
+              {t.title}
+            </h3>
 
-      
+            {/* Message */}
+            <p className="my-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+              “{t.message}”
+            </p>
 
-<div className="grid mb-8 border border-gray-200 rounded-lg shadow-xs dark:border-gray-700 md:mb-12 md:grid-cols-2 bg-white dark:bg-gray-800">
-    <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 rounded-t-lg md:rounded-t-none md:rounded-ss-lg md:border-e dark:bg-gray-800 dark:border-gray-700">
-        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Very easy this was to integrate</h3>
-            <p className="my-4">If you care for your time, I hands down would go with this.</p>
-        </blockquote>
-        <figcaption className="flex items-center justify-center ">
-            <Image className="rounded-full w-9 h-9" src={img1} 
-            width={100} height={100}
-            alt="profile picture"/>
-            <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Bonnie Green</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400 ">Developer at Open AI</div>
+            {/* Profile */}
+            <div className="flex items-center mt-6">
+              <Image
+                src={img1}
+                width={50}
+                height={50}
+                className="rounded-full border-2 border-orange-400"
+                alt={t.name}
+              />
+              <div className="ml-3">
+                <p className="font-semibold text-gray-900 dark:text-white">{t.name}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400">{t.role}</p>
+              </div>
             </div>
-        </figcaption>    
-    </figure>
-    <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Solid foundation for any project</h3>
-            <p className="my-4">Designing with Figma components that can be easily translated to the utility classes of Tailwind CSS is a huge timesaver!</p>
-        </blockquote>
-        <figcaption className="flex items-center justify-center ">
-            <Image className="rounded-full w-9 h-9" src={ img1} 
-             alt="profile picture"/>
-            <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Roberta Casas</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">Lead designer at Dropbox</div>
-            </div>
-        </figcaption>    
-    </figure>
-    <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-b border-gray-200 md:rounded-es-lg md:border-b-0 md:border-e dark:bg-gray-800 dark:border-gray-700">
-        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Mindblowing workflow</h3>
-            <p className="my-4">Aesthetically, the well designed components are beautiful and will undoubtedly level up your next application.</p>
-        </blockquote>
-        <figcaption className="flex items-center justify-center ">
-            <Image className="rounded-full w-9 h-9" src={ img1 } 
-            alt="profile picture"/>
-            <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Jese Leos</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">Software Engineer at Facebook</div>
-            </div>
-        </figcaption>    
-    </figure>
-    <figure className="flex flex-col items-center justify-center p-8 text-center bg-white border-gray-200 rounded-b-lg md:rounded-se-lg dark:bg-gray-800 dark:border-gray-700">
-        <blockquote className="max-w-2xl mx-auto mb-4 text-gray-500 lg:mb-8 dark:text-gray-400">
-            <h3 className="text-lg font-semibold text-gray-900 dark:text-white">Efficient Collaborating</h3>
-            <p className="my-4">You have many examples that can be used to create a fast prototype for your team.</p>
-        </blockquote>
-        <figcaption className="flex items-center justify-center ">
-            <Image className="rounded-full w-9 h-9" src={ img1} 
-            alt="profile picture"/>
-            <div className="space-y-0.5 font-medium dark:text-white text-left rtl:text-right ms-3">
-                <div>Joseph McFall</div>
-                <div className="text-sm text-gray-500 dark:text-gray-400">CTO at Google</div>
-            </div>
-        </figcaption>    
-    </figure>
-</div>
-
-    </div>
-  )
+          </div>
+        ))}
+      </div>
+    </section>
+  );
 }

@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import { FaBinoculars, FaCameraRetro, FaMapMarkedAlt, FaTree } from 'react-icons/fa';
+import Link from 'next/link';
 
 const HomeSafariSection = () => {
   return (
@@ -17,12 +18,12 @@ const HomeSafariSection = () => {
         </p>
       </div>
 
-      <div className="container mx-auto px-4 bg-white">
+      <div className="container mx-auto px-4 ">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
 
           {/* LEFT SIDE FEATURES */}
           <div className="order-2 lg:order-1">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 bg-amber-300 h-[100%]">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-12  ">
 
               {/* Feature 1 */}
               <div className="flex items-start">
@@ -85,6 +86,12 @@ const HomeSafariSection = () => {
               </div>
 
             </div>
+                        <Link
+              href="/safari"
+              className="inline-block mt-5 px-10 py-3 bg-[#6b3f1d] text-white text-lg rounded-full shadow-lg hover:bg-primary/90 hover:scale-105 transition-all duration-300"
+            >
+              Explore More
+            </Link>
           </div>
 
           {/* RIGHT SIDE IMAGES */}

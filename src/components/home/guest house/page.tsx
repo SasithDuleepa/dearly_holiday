@@ -7,6 +7,7 @@ import { Swiper } from "swiper";
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { motion } from "framer-motion";
 
 import img1 from "../../../../public/images/guest house home slider/1.png";
 import img2 from "../../../../public/images/guest house home slider/2.png";
@@ -48,8 +49,26 @@ export default function HomeGuestHouse() {
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen p-8">
-      <div className="flex flex-col lg:flex-row content-center white shadow-lg px-10 py-5 rounded-3xl">
-        <div className="lg:max-w-[500px] px-5 flex flex-col justify-between">
+
+      {/* Heading */}
+      <motion.h1
+        className="font-qwitcher mb-12 text-foreground text-center text-6xl md:text-8xl xl:text-9xl leading-tight"
+        initial={{ opacity: 0, y: -50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+      >
+        L<span className="text-primary font-semibold">earn to </span>
+        C<span className="text-primary font-semibold">ook </span>
+        T<span className="text-primary font-semibold">raditional </span>
+        S<span className="text-primary font-semibold">ri </span>
+        L<span className="text-primary font-semibold">ankan </span>
+        M<span className="text-primary font-semibold">eals</span>
+      </motion.h1>
+
+
+      <div className=" flex flex-col lg:flex-row content-center white shadow-lg px-10 py-5 rounded-3xl bg-white">
+        <div className="lg:max-w-[500px] px-5 flex flex-col justify-between ">
           <div>
             <h1 className="text-3xl font-bold mb-6">Stay with Comfort and Warmth</h1>
             <p className="text-[18px] text-justify">

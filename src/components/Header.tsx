@@ -48,7 +48,7 @@ const Header = () => {
               className={`relative text-[17px] font-medium transition-all duration-300 ${
                 pathname === link.href
                   ? "text-yellow-700"
-                  : "text-gray-800 hover:text-yellow-700"
+                  : "text-white hover:text-yellow-700"
               }`}
             >
               {link.label}

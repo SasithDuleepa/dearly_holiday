@@ -590,3 +590,15 @@ body {
 
   transform: translateY(-155px);
 }
+
+/* new  */
+:root {
+  --cs-blue-dark: #1b3c53;
+  --cs-blue-medium: #234c6a;
+  --cs-blue-light: #456882;
+  --cs-powder: #d2c1b6;
+
+  /* Extras */
+  --cs-bg-light: #f5f6f7;
+  --cs-text-light: #ffffff;
+}

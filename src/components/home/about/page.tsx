@@ -25,7 +25,7 @@ const features = [
 
 export default function HomeAbout() {
   return (
-    <section className="relative bg-[#cdb085] shadow-2xl text-center rounded-3xl p-6 sm:rounded-[40px] sm:p-8 md:rounded-[60px] md:p-12 lg:rounded-[80px] lg:p-16 xl:p-20 overflow-hidden">
+    <section className="relative bg-[var(--cs-blue-dark)] shadow-2xl text-center rounded-3xl p-6 sm:rounded-[40px] sm:p-8 md:rounded-[60px] md:p-12 lg:rounded-[80px] lg:p-16 xl:p-20 overflow-hidden">
 
       {/* Glow overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-[#cdb085]/30 to-[#8a6b45]/20 rounded-[inherit] pointer-events-none"></div>
@@ -74,7 +74,7 @@ export default function HomeAbout() {
               viewport={{ once: true }}
             >
               <div className="bg-white rounded-full shadow-lg p-2 sm:p-3 flex items-center justify-center">
-                <Icon className="w-6 h-6 text-[#967e59]" />
+                <Icon className="w-6 h-6 text-[var(--cs-blue-dark)]" />
               </div>
 
               <span className="text-white font-medium text-left text-sm sm:text-base md:text-lg">

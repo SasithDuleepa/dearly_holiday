@@ -14,7 +14,7 @@ import HomeGallery from "@/components/home/gallery/page";
 
 export default function Home() {
   return (
-    <>
+    <div className="bg-[var(--cs-bg-light)]">
       {/* 🌅 Hero Section */}
       <section
         className="relative flex flex-col items-center justify-center h-screen bg-cover bg-center"
@@ -75,7 +75,7 @@ export default function Home() {
 
       {/* 🏡 Guest House Section */}
       <motion.section
-        className="bg-beige/30 py-20"
+        className="py-0"
         variants={{
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -91,7 +91,7 @@ export default function Home() {
 
       {/* 🍛 Cooking Class Section */}
       <motion.section
-        className="py-20"
+        className="py-0"
         variants={{
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -110,7 +110,7 @@ export default function Home() {
 
       {/* 🦁 Safari Section */}
       <motion.section
-        className=" py-20"
+        className=" py-20 "
         variants={{
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -126,7 +126,7 @@ export default function Home() {
 
       {/* 🖼️ Gallery Section */}
       <motion.section
-        className="bg-beige/20 py-20"
+        className=" py-20"
         variants={{
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },
@@ -158,6 +158,6 @@ export default function Home() {
 
 
  
-    </>
+    </div>
   );
 }

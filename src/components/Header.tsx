@@ -48,6 +48,8 @@ const Header = () => {
               className={`relative text-[17px] font-medium transition-all duration-300 ${
                 pathname === link.href
                   ? "text-yellow-700"
+                  : isScrolled
+                  ? "text-gray-700 hover:text-yellow-700"
                   : "text-white hover:text-yellow-700"
               }`}
             >

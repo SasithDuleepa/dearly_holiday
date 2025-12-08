@@ -72,7 +72,7 @@ export default function HomeCustomerFeedback() {
                 src={img1}
                 width={50}
                 height={50}
-                className="rounded-full border-2 border-orange-400"
+                className="rounded-full border-2 border-orange-400 object-cover"
                 alt={t.name}
               />
               <div className="ml-3">

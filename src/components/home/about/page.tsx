@@ -70,7 +70,7 @@ export default function HomeAbout() {
               className="flex items-center gap-3 sm:gap-4 bg-white/10 hover:bg-white/20 transition-all duration-300 rounded-2xl p-3 sm:p-4 md:p-5 shadow-md"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.6 }}
+              transition={{ duration: 0.6 }}
               viewport={{ once: true }}
             >
               <div className="bg-white rounded-full shadow-lg p-2 sm:p-3 flex items-center justify-center">

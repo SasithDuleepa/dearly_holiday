@@ -4,7 +4,7 @@ import cookingImg from "../../../public/images/cooking-class.jpg"; // optional i
 
 const CookingClassPage = () => {
   return (
-    <section className="py-20 bg-amber-50">
+    <section className="py-20 bg-[var(--cs-powder)]/70">
       {/* Title */}
       <h1 className="font-qwitcher mb-4 xl:mb-6 text-foreground text-7xl xl:text-9xl text-center">
         C<span className="text-primary font-semibold">ook </span>
@@ -36,11 +36,11 @@ const CookingClassPage = () => {
           <h3 className="text-xl font-semibold text-gray-800 mb-3">What You’ll Learn</h3>
           <ul className="list-disc list-inside text-gray-700 space-y-2 mb-6">
             <li>🌶️ How to blend and balance Sri Lankan spices</li>
-            <li>🥥 Making coconut milk and sambols from scratch</li>
+            <li>🍘 Making coconut milk and sambols from scratch</li>
             <li>🍛 Preparing a full rice & curry meal with local ingredients</li>
           </ul>
 
-          <button className="bg-yellow-600 text-white px-6 py-3 rounded-md hover:bg-yellow-700 transition">
+          <button className="button px-7 ">
             Join the Class
           </button>
         </div>

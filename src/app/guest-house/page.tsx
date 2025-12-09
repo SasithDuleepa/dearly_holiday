@@ -26,15 +26,15 @@ export default function GuestHousePage() {
         </div>
 
         {/* About Section */}
-        <div className="grid md:grid-cols-2 gap-10 items-center mb-20 bg-amber-50 rounded-3xl">
+        <div className="grid md:grid-cols-2 px-5 py-4 gap-10 items-center mb-20 bg-[var(--cs-blue-light)]/90 rounded-3xl">
           <div className="m-5">
-            <h2 className="text-2xl font-semibold mb-3">Peaceful Stay in Tissamaharama</h2>
-            <p className="text-gray-700 mb-4">
+            <h2 className="text-2xl font-semibold mb-3 text-[var(--cs-text-light)]">Peaceful Stay in Tissamaharama</h2>
+            <p className="text-[var(--cs-text-light)] mb-4">
               Nestled in the heart of Tissamaharama, our guest house offers a peaceful retreat 
               for travelers exploring southern Sri Lanka. Each room combines comfort, simplicity, 
               and local charm to give you a truly relaxing stay.
             </p>
-            <p className="text-gray-700">
+            <p className="text-[var(--cs-text-light)]">
               Enjoy your morning tea in the tropical garden, surrounded by birdsong, 
               and experience the warmth of genuine Sri Lankan hospitality.
             </p>
@@ -60,7 +60,7 @@ export default function GuestHousePage() {
           {facilities.map((item, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center bg-amber-50 py-10 px-6 rounded-2xl shadow-sm hover:shadow-lg hover:bg-amber-100 transition-all duration-300 group"
+              className="flex flex-col items-center justify-center bg-[var(--cs-powder)] py-10 px-6 rounded-2xl shadow-sm hover:shadow-lg hover:bg-[var(--cs-powder)]/50  transition-all duration-300 group"
             >
               <div className="transform group-hover:scale-110 transition-transform duration-300">
                 {item.icon}

@@ -72,7 +72,7 @@ const SafariPage = () => {
   const images = [Safari1, Safari2, Safari3, Safari4];
 
   return (
-    <main className="bg-amber-50">
+    <main className="bg-[var(--cs-powder)]/70">
       {/* Hero Section */}
       <section
         className="relative h-[60vh] bg-cover bg-center flex items-center justify-center"
@@ -115,7 +115,7 @@ const SafariPage = () => {
             {features.map((feature, i) => (
               <div
                 key={i}
-                className="bg-amber-50 p-6 rounded-xl shadow hover:shadow-lg transition duration-300"
+                className="bg-[var(--cs-powder)] p-6 rounded-xl shadow hover:shadow-lg transition duration-300"
               >
                 <div className="mb-4 flex justify-center">{feature.icon}</div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-800">{feature.title}</h3>
@@ -127,7 +127,7 @@ const SafariPage = () => {
       </section>
 
       {/* Image Slider */}
-      <section className="py-20 bg-amber-100">
+      <section className="py-20 bg-white">
         <h2 className="text-3xl font-bold text-center mb-10 text-gray-800">Wildlife Moments</h2>
         <div className="max-w-6xl mx-auto px-6">
           <div className="swiper safari-slider">
@@ -147,8 +147,8 @@ const SafariPage = () => {
       </section>
 
       {/* Closing Text */}
-      <section className="py-16 text-center max-w-4xl mx-auto px-6">
-        <p className="text-gray-700 text-lg leading-relaxed">
+      <section className="py-16 text-center max-w-4xl mx-auto px-6 ">
+        <p className=" text-lg leading-relaxed">
           “Our guide’s passion for wildlife made every sighting special. We saw leopards, 
           elephants, and even a family of crocodiles up close. It was an unforgettable 
           journey through nature.”

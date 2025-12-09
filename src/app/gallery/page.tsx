@@ -36,7 +36,7 @@ export default function GalleryPage() {
               onClick={() => setFilter(cat)}
               className={`px-4 py-2 rounded-full border transition ${
                 filter === cat
-                  ? "bg-yellow-500 text-white border-yellow-500"
+                  ? "bg-[var(--cs-blue-dark)] text-white bg-[var(--cs-blue-medium)]"
                   : "border-gray-300 text-gray-700 hover:bg-gray-100"
               }`}
             >

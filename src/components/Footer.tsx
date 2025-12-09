@@ -79,7 +79,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-cs-blue-light py-4 text-center text-sm text-cs-blue-dark bg-cs-powder">
+      <div className="border-t border-cs-blue-light py-4 text-center text-sm text-cs-blue-dark bg-[var(--cs-powder)]">
         © {new Date().getFullYear()} Dearly Home. All rights reserved.
       </div>
     </footer>

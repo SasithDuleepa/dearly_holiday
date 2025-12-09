@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 
 const ContactPage = () => {
   return (
-    <section className="bg-amber-50 min-h-screen py-20">
+    <section className="bg-[var(--cs-powder)]/50 min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-16">
@@ -21,19 +21,19 @@ const ContactPage = () => {
         {/* Contact Info Cards */}
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           <div className="bg-white p-8 rounded-2xl shadow-md text-center hover:shadow-lg transition">
-            <Phone className="mx-auto text-yellow-600 mb-4" size={36} />
+            <Phone className="mx-auto text-[var(--cs-blue-dark)] mb-4" size={36} />
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Call Us</h3>
             <p className="text-gray-600">+94 71 234 5678</p>
           </div>
 
           <div className="bg-white p-8 rounded-2xl shadow-md text-center hover:shadow-lg transition">
-            <Mail className="mx-auto text-yellow-600 mb-4" size={36} />
+            <Mail className="mx-auto text-[var(--cs-blue-dark)] mb-4" size={36} />
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Email</h3>
             <p className="text-gray-600">info@diarlyguesthouse.com</p>
           </div>
 
           <div className="bg-white p-8 rounded-2xl shadow-md text-center hover:shadow-lg transition">
-            <MapPin className="mx-auto text-yellow-600 mb-4" size={36} />
+            <MapPin className="mx-auto text-[var(--cs-blue-dark)] mb-4" size={36} />
             <h3 className="text-xl font-semibold text-gray-800 mb-2">Visit Us</h3>
             <p className="text-gray-600">
               No. 12, Lake Road,<br />
@@ -71,7 +71,7 @@ const ContactPage = () => {
               </div>
               <button
                 type="submit"
-                className="bg-yellow-600 text-white px-6 py-3 rounded-md hover:bg-yellow-700 transition w-full font-semibold"
+                className="bg-[var(--cs-blue-dark)] text-white px-6 py-3 rounded-md hover:bg-[var(--cs-blue-light)]/80 hover:text-[var(--cs-blue-dark)] transition w-full font-semibold"
               >
                 Send Message
               </button>

@@ -7,27 +7,27 @@ import Desika from "../../../public/images/desika.jpg";
 
 export default function AboutPage() {
   return (
-    <div className="container mx-auto px-6 ">
+    <div className="  ">
 
       {/* -------------------------------------------------- */}
       {/* HERO SECTION */}
       {/* -------------------------------------------------- */}
       <section
-        className="relative h-[55vh] md:h-[65vh] bg-cover bg-center flex items-center justify-center rounded-3xl overflow-hidden shadow-xl"
+        className="relative h-[60vh] bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${Banner.src})` }}
       >
         {/* gradient overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--cs-blue-dark)/70] to-[var(--cs-blue-medium)/60]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--cs-blue-dark)]/20 to-[var(--cs-blue-medium)]/30" />
 
         {/* title */}
-        <h1 className="relative z-10 text-white font-qwitcher text-7xl md:text-9xl text-center px-4 font-bold leading-tight drop-shadow-lg">
-          W<span className="text-[var(--cs-powder)]">elcome </span>
-          T<span className="text-[var(--cs-powder)]">o </span>
-          O<span className="text-[var(--cs-powder)]">ur </span>
-          W<span className="text-[var(--cs-powder)]">orld </span>
-          O<span className="text-[var(--cs-powder)]">f </span>
-          C<span className="text-[var(--cs-powder)]">urated </span>
-          E<span className="text-[var(--cs-powder)]">xperiences</span>
+        <h1 className="relative z-10 text-[var(--cs-text-light)] font-qwitcher text-7xl md:text-9xl text-center px-4 font-bold leading-tight drop-shadow-lg">
+          W<span className="text-[var(--cs-text-light)]">elcome </span>
+          T<span className="text-[var(--cs-text-light)]">o </span>
+          O<span className="text-[var(--cs-text-light)]">ur </span>
+          W<span className="text-[var(--cs-text-light)]">orld </span>
+          O<span className="text-[var(--cs-text-light)]">f </span>
+          C<span className="text-[var(--cs-text-light)]">urated </span>
+          E<span className="text-[var(--cs-text-light)]">xperiences</span>
         </h1>
       </section>
 
@@ -36,14 +36,14 @@ export default function AboutPage() {
       {/* -------------------------------------------------- */}
       {/* FOUNDER SECTION */}
       {/* -------------------------------------------------- */}
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+      <div className="max-w-6xl mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
 
         {/* image */}
         <Image
           src={Desika}
           alt="Desika"
-          width={600}
-          height={600}
+          width={500}
+          height={500}
           className="rounded-2xl object-cover shadow-xl border-4 border-[var(--cs-blue-light)]"
         />
 
@@ -68,7 +68,7 @@ export default function AboutPage() {
       {/* -------------------------------------------------- */}
       {/* OUR STORY SECTION */}
       {/* -------------------------------------------------- */}
-      <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-14 items-center">
+      <div className= "max-w-6xl mx-auto mt-20 grid grid-cols-1 md:grid-cols-2 gap-14 items-center mt-10 mb-20">
 
         {/* text first (for desktop) */}
         <div className="order-2 md:order-1">

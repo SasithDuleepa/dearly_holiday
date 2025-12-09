@@ -17,8 +17,8 @@ import img6 from "../../../../public/images/guest house home slider/6.png";
 
 export default function HomeGuestHouse() {
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     Swiper.use([Navigation, Autoplay]);
-
     const swiper = new Swiper(".guest-house-slider", {
       loop: true,
       // Default: 1 slide visible

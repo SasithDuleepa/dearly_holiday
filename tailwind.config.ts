@@ -9,17 +9,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        'white': '#FFFFFF',
-        'beige': '#F5F5DC',
-        'green': '#556B2F',
-        'brown': '#8B4513',
-        'forest-green': '#4E7C4F',
-        'warm-sand-beige': '#E5D3B3',
-        'terracotta-accent': '#C2704E',
-        'ivory-background': '#FAF8F3',
-        'custom-beige': '#F8F6F2',
-        'custom-olive': '#7A8450',
-        'custom-brown': '#4A3F35',
+        'cs-blue-dark': '#1b3c53',
+        'cs-blue-medium': '#234c6a',
+        'cs-blue-light': '#456882',
+        'cs-powder': '#d2c1b6',
+        'cs-bg-light': '#f5f6f7',
+        'cs-text-light': '#ffffff',
       },
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],

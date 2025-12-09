@@ -13,18 +13,18 @@ export default function HomeCooking() {
       
       {/* Heading */}
       <motion.h1
-        className="font-qwitcher mb-12 text-background text-6xl md:text-8xl xl:text-9xl leading-tight"
+        className="font-qwitcher mb-12 text-cs-blue-dark text-6xl md:text-8xl xl:text-9xl leading-tight"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        L<span className="text-primary font-semibold">earn to </span>
-        C<span className="text-primary font-semibold">ook </span>
-        T<span className="text-primary font-semibold">raditional </span>
-        S<span className="text-primary font-semibold">ri </span>
-        L<span className="text-primary font-semibold">ankan </span>
-        M<span className="text-primary font-semibold">eals</span>
+        L<span className="text-cs-blue-medium font-semibold">earn to </span>
+        C<span className="text-cs-blue-medium font-semibold">ook </span>
+        T<span className="text-cs-blue-medium font-semibold">raditional </span>
+        S<span className="text-cs-blue-medium font-semibold">ri </span>
+        L<span className="text-cs-blue-medium font-semibold">ankan </span>
+        M<span className="text-cs-blue-medium font-semibold">eals</span>
       </motion.h1>
 
       <div className="flex flex-col-reverse md:flex-row items-start justify-between gap-16 mt-10">
@@ -37,7 +37,7 @@ export default function HomeCooking() {
           transition={{ duration: 1 }}
           viewport={{ once: true }}
         >
-          <p className="text-background text-base md:text-xl font-medium leading-relaxed">
+          <p className="text-cs-blue-dark text-base md:text-xl font-medium leading-relaxed">
             Join our hands-on cooking class and uncover the secrets of authentic
             Sri Lankan cuisine — from fragrant coconut curries to crispy golden
             hoppers. In our family kitchen, you’ll cook with fresh local
@@ -62,7 +62,7 @@ export default function HomeCooking() {
           >
             <Link
               href="/cooking-class"
-              className="inline-block px-10 py-3 bg-[#6b3f1d] text-white text-lg rounded-full shadow-lg hover:bg-primary/90 hover:scale-105 transition-all duration-300"
+              className="inline-block px-10 py-3 bg-cs-blue-medium text-cs-text-light text-lg rounded-full shadow-lg hover:bg-cs-blue-dark hover:scale-105 transition-all duration-300"
             >
               Explore More
             </Link>

@@ -32,12 +32,12 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         isScrolled
-          ? "backdrop-blur-md bg-white/70 shadow-md"
+          ? "backdrop-blur-md bg-cs-bg-light/70 shadow-md"
           : "glass"
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
-        <div className="text-xl font-semibold text-forest-green">
+        <div className="text-xl font-semibold text-cs-blue-dark">
           <Link href="/">Diarly Home</Link>
         </div>
         <nav className="hidden md:flex items-center space-x-6">
@@ -47,15 +47,15 @@ const Header = () => {
               href={link.href}
               className={`relative text-[17px] font-medium transition-all duration-300 ${
                 pathname === link.href
-                  ? "text-yellow-700"
+                  ? "text-cs-blue-medium"
                   : isScrolled
-                  ? "text-gray-700 hover:text-yellow-700"
-                  : "text-white hover:text-yellow-700"
+                  ? "text-cs-blue-dark hover:text-cs-blue-medium"
+                  : "text-cs-text-light hover:text-cs-powder"
               }`}
             >
               {link.label}
               <span
-                className={`absolute bottom-0 left-0 w-full h-[2px] bg-yellow-700 transition-transform duration-300 origin-right ${
+                className={`absolute bottom-0 left-0 w-full h-[2px] bg-cs-blue-medium transition-transform duration-300 origin-right ${
                   pathname === link.href
                     ? "scale-x-100"
                     : "scale-x-0 group-hover:scale-x-100"
@@ -66,7 +66,7 @@ const Header = () => {
 
           <Link
             href="/booking"
-            className="bg-yellow-700 text-white font-semibold py-2 px-5 rounded-full hover:bg-yellow-800 transition duration-300 shadow-md"
+            className="bg-cs-blue-medium text-cs-text-light font-semibold py-2 px-5 rounded-full hover:bg-cs-blue-dark transition duration-300 shadow-md"
           >
             Book Now
           </Link>
@@ -74,7 +74,7 @@ const Header = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-yellow-700 focus:outline-none"
+          className="md:hidden text-cs-blue-medium focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <X size={26} /> : <Menu size={26} />}
@@ -87,7 +87,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-white/95 backdrop-blur-md transition-all duration-500 overflow-hidden ${
+        className={`md:hidden bg-cs-bg-light/95 backdrop-blur-md transition-all duration-500 overflow-hidden ${
           isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
@@ -99,8 +99,8 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
               className={`text-lg font-medium transition-all duration-300 ${
                 pathname === link.href
-                  ? "text-yellow-700"
-                  : "text-gray-700 hover:text-yellow-700"
+                  ? "text-cs-blue-medium"
+                  : "text-cs-blue-dark hover:text-cs-blue-medium"
               }`}
             >
               {link.label}
@@ -109,7 +109,7 @@ const Header = () => {
           <Link
             href="/booking"
             onClick={() => setIsMenuOpen(false)}
-            className="bg-yellow-700 text-white font-semibold py-2 px-6 rounded-full hover:bg-yellow-800 transition duration-300 shadow-md"
+            className="bg-cs-blue-medium text-cs-text-light font-semibold py-2 px-6 rounded-full hover:bg-cs-blue-dark transition duration-300 shadow-md"
           >
             Book Now
           </Link>

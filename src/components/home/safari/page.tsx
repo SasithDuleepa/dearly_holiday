@@ -8,18 +8,18 @@ const HomeSafariSection = () => {
     <section className="py-12 md:py-16 lg:py-20 ">
       {/* Heading */}
       <motion.h1
-        className="font-qwitcher text-center mb-12 text-6xl md:text-8xl xl:text-9xl leading-tight"
+        className="font-qwitcher text-center mb-12 text-6xl md:text-8xl xl:text-9xl leading-tight text-cs-blue-dark"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        E<span className="text-primary font-semibold">mbark </span>
-        O<span className="text-primary font-semibold">n </span>
-        A<span className="text-primary font-semibold">n  </span>
-        U<span className="text-primary font-semibold">nforgettable </span>
-        S<span className="text-primary font-semibold">afari </span>
-        A<span className="text-primary font-semibold">dventure </span>
+        E<span className="text-cs-blue-medium font-semibold">mbark </span>
+        O<span className="text-cs-blue-medium font-semibold">n </span>
+        A<span className="text-cs-blue-medium font-semibold">n  </span>
+        U<span className="text-cs-blue-medium font-semibold">nforgettable </span>
+        S<span className="text-cs-blue-medium font-semibold">afari </span>
+        A<span className="text-cs-blue-medium font-semibold">dventure </span>
       </motion.h1>
       
       {/* TOP CENTER TEXT */}
@@ -27,7 +27,7 @@ const HomeSafariSection = () => {
 
 
         
-        <p className="text-gray-600 text-base md:text-lg leading-relaxed">
+        <p className="text-cs-blue-dark text-base md:text-lg leading-relaxed">
           Experience the untamed beauty of the wilderness and witness majestic creatures in their natural habitat.
           Our expert guides will lead you on an exhilarating journey through breathtaking landscapes, creating
           memories that will last a lifetime.
@@ -44,13 +44,13 @@ const HomeSafariSection = () => {
               {/* Feature 1 */}
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-green-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-cs-blue-medium text-cs-text-light">
                     <FaBinoculars className="h-6 w-6" />
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-gray-800">Expert-Guided Tours</h3>
-                  <p className="mt-1 text-gray-600">
+                  <h3 className="text-lg font-semibold text-cs-blue-dark">Expert-Guided Tours</h3>
+                  <p className="mt-1 text-cs-blue-dark">
                     Our knowledgeable guides ensure a safe and informative adventure.
                   </p>
                 </div>
@@ -59,13 +59,13 @@ const HomeSafariSection = () => {
               {/* Feature 2 */}
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-yellow-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-cs-blue-medium text-cs-text-light">
                     <FaCameraRetro className="h-6 w-6" />
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-gray-800">Photography Opportunities</h3>
-                  <p className="mt-1 text-gray-600">
+                  <h3 className="text-lg font-semibold text-cs-blue-dark">Photography Opportunities</h3>
+                  <p className="mt-1 text-cs-blue-dark">
                     Capture stunning moments with incredible wildlife and scenery.
                   </p>
                 </div>
@@ -74,13 +74,13 @@ const HomeSafariSection = () => {
               {/* Feature 3 */}
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-blue-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-cs-blue-medium text-cs-text-light">
                     <FaMapMarkedAlt className="h-6 w-6" />
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-gray-800">Customized Itineraries</h3>
-                  <p className="mt-1 text-gray-600">
+                  <h3 className="text-lg font-semibold text-cs-blue-dark">Customized Itineraries</h3>
+                  <p className="mt-1 text-cs-blue-dark">
                     Tailored safari experiences based on your interests.
                   </p>
                 </div>
@@ -89,13 +89,13 @@ const HomeSafariSection = () => {
               {/* Feature 4 */}
               <div className="flex items-start">
                 <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-red-500 text-white">
+                  <div className="flex items-center justify-center h-12 w-12 rounded-full bg-cs-blue-medium text-cs-text-light">
                     <FaTree className="h-6 w-6" />
                   </div>
                 </div>
                 <div className="ml-4">
-                  <h3 className="text-lg font-semibold text-gray-800">Conservation Efforts</h3>
-                  <p className="mt-1 text-gray-600">
+                  <h3 className="text-lg font-semibold text-cs-blue-dark">Conservation Efforts</h3>
+                  <p className="mt-1 text-cs-blue-dark">
                     Supporting the environment and local communities through sustainable tourism.
                   </p>
                 </div>
@@ -104,7 +104,7 @@ const HomeSafariSection = () => {
             </div>
                         <Link
               href="/safari"
-              className="inline-block mt-5 px-10 py-3 bg-[#6b3f1d] text-white text-lg rounded-full shadow-lg hover:bg-primary/90 hover:scale-105 transition-all duration-300"
+              className="inline-block mt-5 px-10 py-3 bg-cs-blue-medium text-cs-text-light text-lg rounded-full shadow-lg hover:bg-cs-blue-dark hover:scale-105 transition-all duration-300"
             >
               Explore More
             </Link>

@@ -37,8 +37,8 @@ export default function HomeCustomerFeedback() {
   return (
     <section className="">
       {/* Heading */}
-      <h1 className="font-qwitcher text-center mb-12 text-6xl md:text-8xl text-foreground">
-        H<span className="text-primary font-semibold">appy Guests Around the World</span>
+      <h1 className="font-qwitcher text-center mb-12 text-6xl md:text-8xl text-cs-blue-dark">
+        H<span className="text-cs-blue-medium font-semibold">appy Guests Around the World</span>
       </h1>
 
       {/* Grid */}
@@ -47,9 +47,8 @@ export default function HomeCustomerFeedback() {
           <div
             key={index}
             className="
-              bg-gradient-to-br from-orange-50 via-amber-50 to-yellow-50
-              dark:from-gray-800 dark:via-gray-900 dark:to-gray-950
-              border border-orange-200/50 dark:border-gray-700
+              bg-cs-powder
+              border border-cs-powder
               rounded-3xl p-7 
               shadow-md hover:shadow-xl
               hover:-translate-y-1 
@@ -57,12 +56,12 @@ export default function HomeCustomerFeedback() {
             "
           >
             {/* Title */}
-            <h3 className="text-lg font-bold text-orange-700 dark:text-amber-300">
+            <h3 className="text-lg font-bold text-cs-blue-dark">
               {t.title}
             </h3>
 
             {/* Message */}
-            <p className="my-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p className="my-4 text-cs-blue-dark leading-relaxed">
               “{t.message}”
             </p>
 
@@ -72,12 +71,12 @@ export default function HomeCustomerFeedback() {
                 src={img1}
                 width={50}
                 height={50}
-                className="rounded-full border-2 border-orange-400 object-cover"
+                className="rounded-full border-2 border-cs-blue-light object-cover"
                 alt={t.name}
               />
               <div className="ml-3">
-                <p className="font-semibold text-gray-900 dark:text-white">{t.name}</p>
-                <p className="text-sm text-gray-600 dark:text-gray-400">{t.role}</p>
+                <p className="font-semibold text-cs-blue-dark">{t.name}</p>
+                <p className="text-sm text-cs-blue-dark">{t.role}</p>
               </div>
             </div>
           </div>

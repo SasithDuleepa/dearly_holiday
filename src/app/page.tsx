@@ -31,19 +31,19 @@ export default function Home() {
         <div className=" absolute inset-0 bg-gradient-to-b from-black/60 to-black/80"></div>
 
         <div className="flex items-center z-10 justify-center w-[100%]  mt-70">
-          <h1  className="text-primary font-montserrat  text-8xl text-white z-10 font-[300] border-t-4 border-b-4 ">Welcome to our little paradise</h1>
+          <h1  className="text-cs-text-light font-montserrat  text-8xl text-cs-text-light z-10 font-[300] border-t-4 border-b-4 ">Welcome to our little paradise</h1>
         </div>
 
         <div className="flex justify-center items-center  z-10  gap-10 w-[100%] mt-[18%] ">
 
           <div className="z-10 text-right  w-[100%]  home-bottom-text-left-div">
-            <h1 className="font-montserrat text-4xl text-white z-10 text-right font-[100]  home-bottom-text-left">Experience <br/> the warmth of <br/>Sri Lankan hospitality</h1>
+            <h1 className="font-montserrat text-4xl text-cs-text-light z-10 text-right font-[100]  home-bottom-text-left">Experience <br/> the warmth of <br/>Sri Lankan hospitality</h1>
           </div>
         
-        <div className="bg-white  home-bottom-text-center-div"></div>
+        <div className="bg-cs-text-light  home-bottom-text-center-div"></div>
 
         <div  className=" z-10  w-[100%] home-bottom-text-right-div">
-          <h1 className="font-montserrat text-5xl text-white z-10 font-[300]  home-bottom-text-right">Dearly <br/> Holiday  Inn</h1>
+          <h1 className="font-montserrat text-5xl text-cs-text-light z-10 font-[300]  home-bottom-text-right">Dearly <br/> Holiday  Inn</h1>
         </div>
         
         </div>
@@ -57,7 +57,7 @@ export default function Home() {
 
 
       <motion.section
-        className="bg-beige/30 py-20"
+        className="bg-cs-powder/30 py-20"
         variants={{
   hidden: { opacity: 0, y: 40 },
   visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },

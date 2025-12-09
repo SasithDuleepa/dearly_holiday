@@ -39,8 +39,8 @@ const HomeGallery = () => {
 
               {/* Overlay */}
               <div className="absolute inset-0  bg-opacity-10 flex flex-col justify-end p-6">
-                <h3 className="text-white text-2xl font-bold">{item.title}</h3>
-                <p className="text-white mt-2">{item.description}</p>
+                <h3 className="text-cs-text-light text-2xl font-bold">{item.title}</h3>
+                <p className="text-cs-text-light mt-2">{item.description}</p>
               </div>
             </div>
           </Link>

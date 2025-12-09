@@ -52,26 +52,26 @@ export default function HomeGuestHouse() {
 
       {/* Heading */}
       <motion.h1
-        className="font-qwitcher mb-12 text-foreground text-center text-6xl md:text-8xl xl:text-9xl leading-tight"
+        className="font-qwitcher mb-12 text-cs-blue-dark text-center text-6xl md:text-8xl xl:text-9xl leading-tight"
         initial={{ opacity: 0, y: -50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 1 }}
         viewport={{ once: true }}
       >
-        L<span className="text-primary font-semibold">earn to </span>
-        C<span className="text-primary font-semibold">ook </span>
-        T<span className="text-primary font-semibold">raditional </span>
-        S<span className="text-primary font-semibold">ri </span>
-        L<span className="text-primary font-semibold">ankan </span>
-        M<span className="text-primary font-semibold">eals</span>
+        L<span className="text-cs-blue-medium font-semibold">earn to </span>
+        C<span className="text-cs-blue-medium font-semibold">ook </span>
+        T<span className="text-cs-blue-medium font-semibold">raditional </span>
+        S<span className="text-cs-blue-medium font-semibold">ri </span>
+        L<span className="text-cs-blue-medium font-semibold">ankan </span>
+        M<span className="text-cs-blue-medium font-semibold">eals</span>
       </motion.h1>
 
 
-      <div className=" flex flex-col lg:flex-row content-center white shadow-lg px-10 py-5 rounded-3xl bg-white">
+      <div className=" flex flex-col lg:flex-row content-center white shadow-lg px-10 py-5 rounded-3xl bg-cs-bg-light">
         <div className="lg:max-w-[500px] px-5 flex flex-col justify-between ">
           <div>
-            <h1 className="text-3xl font-bold mb-6">Stay with Comfort and Warmth</h1>
-            <p className="text-[18px] text-justify">
+            <h1 className="text-3xl font-bold mb-6 text-cs-blue-dark">Stay with Comfort and Warmth</h1>
+            <p className="text-[18px] text-justify text-cs-blue-dark">
               Nestled in the peaceful town of Tissamaharama, our guest house offers a cozy retreat surrounded by lush tropical gardens and a calm village atmosphere. Each room is thoughtfully designed for comfort — blending traditional Sri Lankan charm with modern simplicity. Whether you’re planning a Yala Safari or looking for a relaxing stay, you’ll find the perfect balance of tranquility and convenience here.
               <br /><br />
               What makes our guest house special is the genuine care and warmth we share with every guest. From the welcoming smiles to freshly prepared home-cooked meals, we ensure you feel right at home throughout your stay. Experience the beauty of rural Sri Lanka, enjoy peaceful evenings, and create unforgettable memories with us.

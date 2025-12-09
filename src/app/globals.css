@@ -182,9 +182,34 @@ body {
     margin-right: 0px;
   }
 }
+.home-bottom-text-up {
+  margin-bottom: -500px;
+  animation: down-up 1s forwards;
+  animation-delay: 1.8s;
+}
+@keyframes down-up {
+  0% {
+    margin-bottom: -500px;
+  }
+  100% {
+    margin-bottom: 0px;
+  }
+}
+
+.home-bottom-text-down {
+  margin-top: -500px;
+  animation: up-down 1s forwards;
+  animation-delay: 1.8s;
+}
+@keyframes up-down {
+  0% {
+    margin-top: -500px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
 .home-bottom-text-center-div {
-  height: 0px;
-  width: 5px;
   animation: height-up 1s forwards;
   animation-delay: 1s;
   z-index: 20;

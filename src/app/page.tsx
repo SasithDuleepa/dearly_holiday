@@ -27,7 +27,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80"></div>
 
         {/* Main Title */}
-        <div className="flex items-center justify-center w-full z-10 mt-20 md:mt-0 px-4">
+        <div className="flex items-center justify-center w-full z-10 mt-10  md:mt-0 px-4">
           <h1 className="text-[var(--cs-text-light)] font-montserrat 
             text-4xl sm:text-5xl md:text-7xl lg:text-8xl 
             text-center font-light border-t-2 border-b-2 md:border-t-4 md:border-b-4 px-2">
@@ -35,20 +35,22 @@ export default function Home() {
           </h1>
         </div>
 
-        {/* Bottom Hero Text */}
-        <div className="flex flex-col md:flex-row justify-center items-center z-10 gap-6 md:gap-10 w-full mt-16 md:mt-24 px-6">
+        <div className="h-[100px] md:h-0 w-1"></div>
 
-          <div className="text-center md:text-right w-full md:w-1/3">
-            <h1 className="font-montserrat text-2xl sm:text-3xl md:text-4xl text-[var(--cs-text-light)] font-light leading-snug">
+        {/* Bottom Hero Text */}
+        <div className="flex flex-col md:flex-row justify-center items-center z-10 gap-6 md:gap-10 w-full mb-[-200px] md:mt-30 px-6 h-[470px]">
+
+          <div className="text-center  md:text-right  md:w-1/3 home-bottom-text-left-div ">
+            <h1 className="font-montserrat text-xl sm:text-3xl md:text-4xl text-[var(--cs-text-light)] font-light leading-snug md:home-bottom-text-left home-bottom-text-up">
               Experience <br /> the warmth of <br /> Sri Lankan hospitality
             </h1>
           </div>
 
           {/* Divider */}
-          <div className="bg-[var(--cs-text-light)] h-[1px] md:h-[120px] w-1/2 md:w-[2px]"></div>
+          <div className=" bg-[var(--cs-text-light)] h-[1px] md:h-[120px] w-1/2  md:w-[2px] md:home-bottom-text-center-div"></div>
 
-          <div className="text-center md:text-left w-full md:w-1/3">
-            <h1 className="font-montserrat text-3xl sm:text-4xl md:text-5xl text-[var(--cs-text-light)] font-light leading-snug">
+          <div className="text-center md:text-left  md:w-1/3 home-bottom-text-right-div">
+            <h1 className="font-montserrat text-2xl sm:text-4xl md:text-5xl text-[var(--cs-text-light)] font-light leading-snug md:home-bottom-text-right home-bottom-text-down">
               Dearly <br /> Holiday Inn
             </h1>
           </div>

@@ -32,8 +32,8 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
         isScrolled
-          ? "backdrop-blur-md bg-[var(--cs-bg-light)]/70 shadow-md"
-          : "glass"
+          ? "backdrop-blur-md bg-[var(--cs-powder)]/80 shadow-md"
+          : "bg-[var(--cs-powder)]/60"
       }`}
     >
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
@@ -47,7 +47,7 @@ const Header = () => {
               href={link.href}
               className={`relative text-[17px] font-medium transition-all duration-300 ${
                 pathname === link.href
-                  ? "text-[var(--cs-text-light)] underline"
+                  ? "text-[var(--cs-text-light)] "
                   : isScrolled
                   ? "text-[var(--cs-blue-dark)] hover:text-[var(--cs-blue-medium)]"
                   : "text-[var(--cs-text-light)] hover:text-[var(--cs-powder)]"
@@ -55,7 +55,7 @@ const Header = () => {
             >
               {link.label}
               <span
-                className={`absolute bottom-0 left-0 w-full h-[2px] bg-cs-blue-medium transition-transform duration-300 origin-right ${
+                className={`absolute bottom-0 left-0 w-full h-[2px] bg-[var(--cs-blue-medium)] transition-transform duration-300 origin-right ${
                   pathname === link.href
                     ? "scale-x-100"
                     : "scale-x-0 group-hover:scale-x-100"
@@ -66,7 +66,7 @@ const Header = () => {
 
           <Link
             href="/booking"
-            className="bg-cs-blue-medium text-cs-text-light font-semibold py-2 px-5 rounded-full hover:bg-cs-blue-dark transition duration-300 shadow-md"
+            className="bg-[var(--cs-blue-medium)] text-[var(--cs-text-light)] font-semibold py-2 px-5 rounded-full hover:bg-[var(--cs-blue-dark)] transition duration-300 shadow-md"
           >
             Book Now
           </Link>
@@ -87,7 +87,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`md:hidden bg-cs-bg-light/95 backdrop-blur-md transition-all duration-500 overflow-hidden ${
+        className={`md:hidden bg-[var(--cs-bg-light)]/95 backdrop-blur-md transition-all duration-500 overflow-hidden ${
           isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
         }`}
       >
@@ -99,8 +99,8 @@ const Header = () => {
               onClick={() => setIsMenuOpen(false)}
               className={`text-lg font-medium transition-all duration-300 ${
                 pathname === link.href
-                  ? "text-cs-blue-medium"
-                  : "text-cs-blue-dark hover:text-cs-blue-medium"
+                  ? "text-[var(--cs-blue-medium)]"
+                  : "text-[var(--cs-blue-dark)] hover:text-[var(--cs-blue-medium)]"
               }`}
             >
               {link.label}
@@ -109,7 +109,7 @@ const Header = () => {
           <Link
             href="/booking"
             onClick={() => setIsMenuOpen(false)}
-            className="bg-cs-blue-medium text-cs-text-light font-semibold py-2 px-6 rounded-full hover:bg-cs-blue-dark transition duration-300 shadow-md"
+            className="bg-[var(--cs-blue-medium)] text-[var(--cs-text-light)] font-semibold py-2 px-6 rounded-full hover:bg-[var(--cs-blue-dark)] transition duration-300 shadow-md"
           >
             Book Now
           </Link>

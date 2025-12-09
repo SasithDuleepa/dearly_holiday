@@ -41,7 +41,7 @@ export default function Home() {
         <div className="flex flex-col md:flex-row justify-center items-center z-10 gap-6 md:gap-10 w-full mb-[-200px] md:mt-30 px-6 h-[470px]">
 
           <div className="text-center  md:text-right  md:w-1/3 home-bottom-text-left-div ">
-            <h1 className="font-montserrat text-xl sm:text-3xl md:text-4xl text-[var(--cs-text-light)] font-light leading-snug md:home-bottom-text-left home-bottom-text-up">
+            <h1 className="font-montserrat text-xl sm:text-3xl md:text-4xl text-[var(--cs-text-light)] font-light leading-snug home-bottom-text-left ">
               Experience <br /> the warmth of <br /> Sri Lankan hospitality
             </h1>
           </div>
@@ -50,7 +50,7 @@ export default function Home() {
           <div className=" bg-[var(--cs-text-light)] h-[1px] md:h-[120px] w-1/2  md:w-[2px] md:home-bottom-text-center-div"></div>
 
           <div className="text-center md:text-left  md:w-1/3 home-bottom-text-right-div">
-            <h1 className="font-montserrat text-2xl sm:text-4xl md:text-5xl text-[var(--cs-text-light)] font-light leading-snug md:home-bottom-text-right home-bottom-text-down">
+            <h1 className="font-montserrat text-2xl sm:text-4xl md:text-5xl text-[var(--cs-text-light)] font-light leading-snug home-bottom-text-right ">
               Dearly <br /> Holiday Inn
             </h1>
           </div>
@@ -92,7 +92,7 @@ export default function Home() {
 
       {/* Cooking */}
       <motion.section
-        className="py-0"
+        className="py-0 home-cooking"
         variants={{
           hidden: { opacity: 0, y: 40 },
           visible: { opacity: 1, y: 0, transition: { duration: 0.8, ease: "easeOut" } },

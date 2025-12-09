@@ -2,11 +2,11 @@
 or read our installation document. (go to lightswind.com/components/Installation)
 npm i lightswind@latest*/
 
+import Image from 'next/image';
 import { useState, useEffect, useRef, useCallback, useMemo } from 'react';
 import { motion, useInView } from 'framer-motion';
 import {
     LucideIcon,
-    TrendingUp, // Generic icon for fallback
     Search,
     DeleteIcon,
 } from 'lucide-react';
@@ -69,7 +69,7 @@ const CarouselItemCard: React.FC<CarouselItemProps> = ({ chain, side }) => {
         <div className="rounded-full border border-muted-foreground/60 
         dark:border-muted-foreground/40 p-2 bg-foreground">
             {logo ? (
-                <img src={logo} alt={`${name} logo`} className="size-8 rounded-full object-cover" />
+                <Image src={logo} alt={`${name} logo`} width={32} height={32} className="size-8 rounded-full object-cover" />
             ) : (
                 <FallbackIcon className="size-8 text-background" />
             )}
@@ -242,7 +242,7 @@ const ChainCarousel: React.FC<ChainCarouselProps> = ({
                         <div className="flex flex-col items-center justify-center gap-0 mt-4">
                             <div className='p-2 bg-foreground rounded-full'>
                                 {currentItem.logo ? (
-                                    <img src={currentItem.logo} alt={`${currentItem.name} logo`} className="size-12 rounded-full object-cover" />
+                                    <Image src={currentItem.logo} alt={`${currentItem.name} logo`} width={48} height={48} className="size-12 rounded-full object-cover" />
                                 ) : (
                                     <currentItem.icon className="size-8 text-background" />
                                 )}
@@ -310,7 +310,7 @@ const ChainCarousel: React.FC<ChainCarouselProps> = ({
                                     hover:bg-gray-100/10 transition-colors duration-150 rounded-lg m-2"
                                     >
                                         {chain.logo ? (
-                                            <img src={chain.logo} alt={`${chain.name} logo`} className="size-6 rounded-full object-cover" />
+                                            <Image src={chain.logo} alt={`${chain.name} logo`} width={24} height={24} className="size-6 rounded-full object-cover" />
                                         ) : (
                                             <chain.icon size={24} className="text-primary" />
                                         )}

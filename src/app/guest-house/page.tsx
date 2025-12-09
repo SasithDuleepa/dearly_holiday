@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Wifi, Coffee, Leaf, Bike, BookOpen, Shirt } from "lucide-react";
 
 const facilities = [
@@ -40,9 +41,11 @@ export default function GuestHousePage() {
             </p>
           </div>
           <div className="overflow-hidden rounded-xl shadow-lg">
-            <img
+            <Image
               src="/images/3.png"
               alt="Guest House"
+              width={500}
+              height={500}
               className="rounded-xl object-cover w-full h-full hover:scale-105 transition-transform duration-500"
             />
           </div>

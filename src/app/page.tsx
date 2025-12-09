@@ -1,7 +1,5 @@
 "use client";
 import { motion } from "framer-motion";
-import Link from "next/link";
-import Image from "next/image";
 
 import HomeAbout from "@/components/home/about/page";
 import HomeCooking from "@/components/home/cooking/page";

@@ -1,6 +1,4 @@
 "use client";
-import Image from "next/image";
-import cookingImg from "../../../public/images/cooking-class.jpg"; // optional image
 
 const CookingClassPage = () => {
   return (

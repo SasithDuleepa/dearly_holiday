@@ -25,18 +25,20 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/60 to-black/80"></div>
 
         {/* Main Title */}
-        <div className="flex items-center justify-center w-full z-10 mt-10  md:mt-0 px-4">
-          <h1 className="text-[var(--cs-text-light)] font-montserrat 
+        <div className="flex flex-col items-center justify-center w-full z-10 mt-10  md:mt-30 px-4">
+          <div className="h-1  bg-white banner-up-line"></div>
+          <h1 className="text-[var(--cs-text-light)] font-lora font-normal]
             text-4xl sm:text-5xl md:text-7xl lg:text-8xl 
-            text-center font-light border-t-2 border-b-2 md:border-t-4 md:border-b-4 px-2">
+            text-center p-3 px-2">
             Welcome to our little paradise
           </h1>
+          <div className="h-1 bg-white mt-3 banner-down-line"></div>
         </div>
 
-        <div className="h-[100px] md:h-0 w-1"></div>
+        {/* <div className="h-[20vh] md:h-0 w-1"></div> */}
 
         {/* Bottom Hero Text */}
-        <div className="flex flex-col md:flex-row justify-center items-center z-10 gap-6 md:gap-10 w-full mb-[-200px] md:mt-30 px-6 h-[470px]">
+        <div className="flex flex-col md:flex-row justify-center items-center z-10 gap-6 md:gap-10 w-full mb-[-200px] md:mt-40 px-6 h-[470px]">
 
           <div className="text-center  md:text-right  md:w-1/3 home-bottom-text-left-div ">
             <h1 className="font-montserrat text-xl sm:text-3xl md:text-4xl text-[var(--cs-text-light)] font-light leading-snug home-bottom-text-left ">

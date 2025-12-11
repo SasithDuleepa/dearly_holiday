@@ -17,7 +17,7 @@ const config: Config = {
         'cs-text-light': '#ffffff',
       },
       fontFamily: {
-        sans: ['Poppins', 'sans-serif'],
+        sans: ['Poppins', 'sans-serif, lora'],
       },
     },
   },

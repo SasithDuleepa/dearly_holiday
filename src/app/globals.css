@@ -3,6 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 
 @import url("https://fonts.googleapis.com/css2?family=Qwitcher+Grypen:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap");
 
 :root {
   --cs-blue-dark: #1b3c53;
@@ -33,6 +34,37 @@ body {
 }
 .font-montserrat {
   font-family: var(--font-montserrat), sans-serif;
+}
+.font-lora {
+  font-family: var(--font-lora), sans-serif;
+}
+
+/* home */
+.banner-up-line {
+  animation: up-width 1s forwards;
+  animation-delay: 1s;
+  /* width: 65%; */
+}
+@keyframes up-width {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 65%;
+  }
+}
+.banner-down-line {
+  animation: down-width 1s forwards;
+  animation-delay: 1s;
+  /* width: 65%; */
+}
+@keyframes down-width {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 80%;
+  }
 }
 
 .button {

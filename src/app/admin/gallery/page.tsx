@@ -41,7 +41,7 @@ export default function AdminGalleryPage() {
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    if (username === 'admin' && password === 'password') {
+    if (username === '11' && password === '11') {
       setLoggedIn(true);
       setError('');
     } else {

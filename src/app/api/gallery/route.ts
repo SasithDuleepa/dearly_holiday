@@ -4,16 +4,26 @@ import path from 'path';
 
 export async function GET(req: NextRequest) {
   try {
-    const galleryDir = path.join(process.cwd(), 'public', 'gallery');
-    const categories = fs.readdirSync(galleryDir, { withFileTypes: true })
-      .filter(dirent => dirent.isDirectory())
-      .map(dirent => dirent.name);
+    const categoryPaths = {
+      'cooking-class': 'cooking home',
+      'guest-house': 'guest house',
+      'safari': 'safari',
+    };
 
-    const imagesByCategory = categories.reduce((acc, category) => {
-      const categoryDir = path.join(galleryDir, category);
-      const imageFiles = fs.readdirSync(categoryDir);
-      const imageUrls = imageFiles.map(file => `/gallery/${category}/${file}`);
-      acc[category.replace(/\s/g, '-').toLowerCase()] = imageUrls;
+    const imagesByCategory = Object.entries(categoryPaths).reduce((acc, [category, dirName]) => {
+      const categoryDir = path.join(process.cwd(), 'public', 'images', dirName);
+      try {
+        if (fs.existsSync(categoryDir)) {
+          const imageFiles = fs.readdirSync(categoryDir);
+          const imageUrls = imageFiles.map(file => `/images/${dirName}/${file}`);
+          acc[category] = imageUrls;
+        } else {
+            acc[category] = [];
+        }
+      } catch (e) {
+        console.error(e)
+        acc[category] = [];
+      }
       return acc;
     }, {} as Record<string, string[]>);
 

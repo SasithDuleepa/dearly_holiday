@@ -23,9 +23,9 @@ export default function AdminGalleryPage() {
       setLoading(true);
       const res = await fetch('/api/gallery');
       if (!res.ok) throw new Error('Failed to fetch images');
-      const data: ImagesByCategory = await res.json();
-      setImages(data);
-      setSelectedCategory(Object.keys(data)[0] || '');
+      const data = await res.json();
+      setImages(data.allImages);
+      setSelectedCategory(Object.keys(data.allImages)[0] || '');
     } catch (err) {
       setError(err instanceof Error ? err.message : 'An unknown error occurred');
     } finally {

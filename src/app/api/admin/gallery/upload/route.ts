@@ -1,7 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { promises as fs } from 'fs';
 import path from 'path';
-import { IncomingForm } from 'formidable';
 
 export const config = {
   api: {
@@ -18,7 +17,18 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'File and category are required' }, { status: 400 });
   }
 
-  const uploadDir = path.join(process.cwd(), 'public', 'gallery', category);
+  const categoryPaths: { [key: string]: string } = {
+    'cooking-class': 'cooking home',
+    'guest-house': 'guest house',
+    'safari': 'safari',
+  };
+
+  const dirName = categoryPaths[category];
+  if (!dirName) {
+    return NextResponse.json({ error: 'Invalid category' }, { status: 400 });
+  }
+
+  const uploadDir = path.join(process.cwd(), 'public', 'images', dirName);
 
   try {
     await fs.mkdir(uploadDir, { recursive: true });

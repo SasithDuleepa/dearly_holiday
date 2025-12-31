@@ -1,9 +1,10 @@
 "use client";
 import Image from "next/image";
+import Banner from "../../../public/images/dearly cover photos/cooking.png";
 
-import Bowl from "../../../public/images/1.png";
-import Lady from "../../../public/images/2.png";
-import Leaf from "../../../public/images/3.png";
+import Bowl from "../../../public/images/dearly cover photos icons/cooking1.png"
+import Lady from "../../../public/images/dearly cover photos icons/cooking2.png"
+import Leaf from "../../../public/images/dearly cover photos icons/cooking3.png"
 
 const CookingClassPage = () => {
   return (

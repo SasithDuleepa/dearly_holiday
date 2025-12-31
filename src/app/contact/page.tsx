@@ -1,10 +1,11 @@
 "use client";
 import Image from "next/image";
 import { Mail, Phone, MapPin } from "lucide-react";
+import Banner from "../../../public/images/dearly cover photos/contact.png";
 
-import Bag from "../../../public/images/1.png";
-import Board from "../../../public/images/2.png";
-import Leaf from "../../../public/images/3.png";
+import Bag from "../../../public/images/dearly cover photos icons/contact3.png"
+import Board from "../../../public/images/dearly cover photos icons/contact2.png"
+import Leaf from "../../../public/images/dearly cover photos icons/contact1.png"
 
 const ContactPage = () => {
   return (

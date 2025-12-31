@@ -1,13 +1,14 @@
 "use client";
 
 import Image from "next/image";
+import Banner from "../../../public/images/dearly cover photos/about.png";
 // import Banner from "../../../public/images/banner_test-1.png";
 import Guest from "../../../public/images/4.png";
 import Desika from "../../../public/images/desika.jpg";
-import Chef from "../../../public/images/1.png";
-import Travel from "../../../public/images/2.png";
-import Elephant from "../../../public/images/3.png";
-import Relax from "../../../public/images/5.png";
+import Chef from "../../../public/images/dearly cover photos icons/about1.png"
+import Travel from "../../../public/images/dearly cover photos icons/about2.png"
+import Elephant from "../../../public/images/dearly cover photos icons/about3.png"
+import Relax from "../../../public/images/dearly cover photos icons/about4.png"
 
 export default function AboutPage() {
   return (

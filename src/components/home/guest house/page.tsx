@@ -6,6 +6,7 @@ import Swiper from "swiper"; // Import Swiper core
 import { Navigation, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
+import { motion } from "framer-motion";
 
 import img1 from "../../../../public/images/guest house home slider/1.png";
 import img2 from "../../../../public/images/guest house home slider/2.png";

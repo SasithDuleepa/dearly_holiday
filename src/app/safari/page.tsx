@@ -8,16 +8,19 @@ import "swiper/css";
 import "swiper/css/navigation";
 import Image from "next/image";
 
+import Banner from "../../../public/images/dearly cover photos/safari.png";
+
 import { FaUserTie, FaCarSide, FaSmile, FaClock } from "react-icons/fa";
 
+import SafariHero from "../../../public/images/safari_banner.png";
 import Safari1 from "../../../public/images/safari slider/1.png";
 import Safari2 from "../../../public/images/safari slider/2.png";
 import Safari3 from "../../../public/images/safari slider/3.png";
 import Safari4 from "../../../public/images/safari slider/4.png";
 
-import Tree1 from "../../../public/images/1.png";
-import Tree2 from "../../../public/images/2.png";
-import Jeep from "../../../public/images/3.png";
+import Tree1 from "../../../public/images/dearly cover photos icons/safari1.png"
+import Tree2 from "../../../public/images/dearly cover photos icons/safari2.png"
+import Jeep from "../../../public/images/dearly cover photos icons/safari3.png"
 
 
 

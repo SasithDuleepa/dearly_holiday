@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { Wifi, Coffee, Leaf, Bike, BookOpen, Shirt } from "lucide-react";
+import Banner from "../../../public/images/dearly cover photos/guest.png";
 
-import Board from "../../../public/images/1.png";
-import Girl from "../../../public/images/3.png";
-import Leaf_ from "../../../public/images/2.png";
+import Board from "../../../public/images/dearly cover photos icons/guest1.png"
+import Girl from "../../../public/images/dearly cover photos icons/guest3.png"
+import Leaf_ from "../../../public/images/dearly cover photos icons/guest2.png"
 
 
 const facilities = [

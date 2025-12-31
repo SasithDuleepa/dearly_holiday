@@ -1,10 +1,11 @@
 "use client";
+import { motion } from "framer-motion";
 import Image from "next/image";
 
-import imgDaniel from "./../../../../public/images/desika.jpg";
-import imgEmily from "./../../../../public/images/safari.png";
-import imgMichael from "./../../../../public/images/desika.jpg";
-import imgSophie from "./../../../../public/images/safari.png";
+import imgDaniel from "./../../../../public/images/feedback customers/Daniel Hoffman.png";
+import imgEmily from "./../../../../public/images/feedback customers/Emily Carter.png";
+import imgMichael from "./../../../../public/images/feedback customers/Michael Rodriguez.png";
+import imgSophie from "./../../../../public/images/feedback customers/sophie tan.png";
 
 export default function HomeCustomerFeedback() {
   const testimonials = [

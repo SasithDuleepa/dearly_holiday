@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { FaBinoculars, FaCameraRetro, FaMapMarkedAlt, FaTree } from 'react-icons/fa';
 import Link from 'next/link';
+import { motion } from "framer-motion";
 
 const HomeSafariSection = () => {
   return (

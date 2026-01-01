@@ -117,39 +117,39 @@ const Header = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      <div
-        className={`lg:hidden block bg-white backdrop-blur-md transition-all duration-500 overflow-hidden ${
-          isMenuOpen ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
-        }`}
-      >
-        <nav className="flex flex-col items-center space-y-5 py-6">
-          {navLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setIsMenuOpen(false)}
-              className={`text-lg font-medium transition-all duration-300 ${
-                pathname === link.href
-                  ? "text-[var(--cs-blue-medium)]"
-                  : "text-[var(--cs-blue-dark)] hover:text-[var(--cs-blue-medium)]"
-              }`}
-            >
-              {link.label}
-            </Link>
-          ))}
-          <Link
-  href="/booking"
-  onClick={() => setIsMenuOpen(false)}
-  className={`font-semibold py-2 px-6 rounded-full shadow-md transition-colors duration-300 ${
-    isScrolled ? "bg-white text-[#007200]" : "bg-[#007200] text-white"
+{/* Mobile Menu */}
+<div
+  className={`lg:hidden absolute top-full left-0 w-full bg-white shadow-md transition-all duration-300 overflow-hidden z-60 ${
+    isMenuOpen ? "h-auto py-6 opacity-100" : "h-0 py-0 opacity-0"
   }`}
 >
-  Book Now
-</Link>
+  <nav className="flex flex-col items-center space-y-5">
+    {navLinks.map((link) => (
+      <Link
+        key={link.href}
+        href={link.href}
+        onClick={() => setIsMenuOpen(false)}
+        className={`text-lg font-medium transition-all duration-300 ${
+          pathname === link.href
+            ? "text-[var(--cs-blue-medium)]"
+            : "text-[var(--cs-blue-dark)] hover:text-[var(--cs-blue-medium)]"
+        }`}
+      >
+        {link.label}
+      </Link>
+    ))}
+    <Link
+      href="/booking"
+      onClick={() => setIsMenuOpen(false)}
+      className={`font-semibold py-2 px-6 rounded-full shadow-md transition-colors duration-300 ${
+        isScrolled ? "bg-white text-[#007200]" : "bg-[#007200] text-white"
+      }`}
+    >
+      Book Now
+    </Link>
+  </nav>
+</div>
 
-        </nav>
-      </div>
     </header>
   );
 };

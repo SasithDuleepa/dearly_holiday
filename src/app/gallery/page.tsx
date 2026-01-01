@@ -80,10 +80,10 @@ export default function GalleryPage() {
                                                                  sm:block
                                                               "
                                                             />
-        <h1 className="text-4xl sm:text-7xl font-lora font-bold mb-6 mt-20 text-white text-center max-w-[80%] z-50">
+        <h1 className="text-4xl sm:text-7xl font-lora font-bold mb-6 mt-20 text-white text-center max-w-[80%] z-40">
           Captured Memories
         </h1>
-        <p className="text-white z-50 mb-8 max-w-[80%] text-center">
+        <p className="text-white z-40 mb-8 max-w-[80%] text-center">
           Explore beautiful moments from our guest house, cooking experiences, and Yala safari tours.
         </p>
       </section>
@@ -93,7 +93,7 @@ export default function GalleryPage() {
             <button
               key={cat}
               onClick={() => handleFilterChange(cat)}
-              className={`px-4 py-2 rounded-full border transition ${
+              className={`px-4 py-2 rounded-full border transition sm:text-[16px] leading-4 sm:leading-[10px] ${
                 filter === cat
                   ? " text-white bg-[#38B000]"
                   : "border-gray-300 text-black hover:bg-gray-100"

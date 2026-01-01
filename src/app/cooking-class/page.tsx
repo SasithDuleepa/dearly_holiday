@@ -41,7 +41,7 @@ const CookingClassPage = () => {
                     />
         
         
-              <h1 className="text-4xl sm:text-7xl font-lora font-bold mb-6 text-white text-center max-w-[80%] z-50">
+              <h1 className="text-4xl sm:text-7xl font-lora font-bold mb-6 text-white text-center max-w-[80%] z-40">
              Cook With Diarly
             </h1>
       </section>

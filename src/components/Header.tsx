@@ -119,7 +119,7 @@ const Header = () => {
 
 {/* Mobile Menu */}
 <div
-  className={`lg:hidden absolute top-full left-0 w-full bg-white shadow-md transition-all duration-300 overflow-hidden z-60 ${
+  className={`lg:hidden absolute top-full left-0 w-full bg-white shadow-md transition-all duration-300 overflow-hidden z-50 ${
     isMenuOpen ? "h-auto py-6 opacity-100" : "h-0 py-0 opacity-0"
   }`}
 >

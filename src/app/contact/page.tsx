@@ -15,7 +15,7 @@ const ContactPage = () => {
         className="relative h-[60vh] bg-cover bg-center flex items-center justify-center bg-[#007200]"
 
       >
-              <h1 className="text-4xl sm:text-7xl font-lora font-bold mb-6 text-white text-center max-w-[80%] z-50">
+              <h1 className="text-4xl sm:text-7xl font-lora font-bold mb-6 text-white text-center max-w-[80%] z-40">
              Get in Touch
             </h1>
 

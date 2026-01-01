@@ -53,10 +53,10 @@ export default function GuestHousePage() {
             />
 
 
-              <h1 className="text-4xl sm:text-7xl font-lora font-bold mb-6 mt-30 text-white text-center max-w-[80%] z-50">
+              <h1 className="text-4xl sm:text-7xl font-lora font-bold mb-6 mt-30 text-white text-center max-w-[80%] z-40">
              Welcome To Diarly Guest House
             </h1>
-            <h2 className="text-2xl font-semibold mb-3 text-white z-50">Peaceful Stay in Tissamaharama</h2>
+            <h2 className="text-2xl font-semibold mb-3 text-white z-40">Peaceful Stay in Tissamaharama</h2>
 
       </section>
       <div className="max-w-6xl mx-auto px-6">

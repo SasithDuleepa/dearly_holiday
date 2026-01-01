@@ -77,7 +77,7 @@ const SafariPage = () => {
       <section
         className="relative h-[60vh] bg-cover bg-center flex items-center justify-center bg-[#007200]"
       >
-              <h1 className="text-4xl sm:text-7xl font-lora font-bold mb-6 text-white text-center max-w-[70%] z-50">
+              <h1 className="text-4xl sm:text-7xl font-lora font-bold mb-6 text-white text-center max-w-[70%] z-40">
              Explore The Wild Safari Adventure
             </h1>
 

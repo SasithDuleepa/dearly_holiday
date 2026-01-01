@@ -8,8 +8,8 @@ export const dynamic = "force-dynamic";
 export async function GET(req: NextRequest) {
   try {
     const categoryPaths = {
-      'cooking-class': 'cooking class',
-      'guest-house': 'guest house',
+      'cooking-class': 'cooking-class',
+      'guest-house': 'guest-house',
       'safari': 'safari',
     };
 
